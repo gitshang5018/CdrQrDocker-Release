@@ -5,6 +5,6 @@
   "changelog": "- 物理拆分极薄宿主外壳 (CdrQrDocker.dll, ~19KB) 与混淆业务核心库 (CdrQrDocker.Core.dll)\n- 实现纯内存字节流 (Assembly.Load(byte[])) 无锁加载，彻底解除 CorelDRAW 对核心业务库的 Windows 文件锁\n- 突破性实现热重载原地秒级界面置换（Hot Reload），支持后台面板自愈对齐，在线更新彻底免重启 CorelDRAW\n- 包含 C++ 原生机器码 (CdrQrCoreNative.dll) 与极速免抠图矢量巡边",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "24d62e1f8c1e7a6ceeeca0a1896690a9a07a85a08a6fd5bb9630af5f28ccf2bf"
+  "sha256": "4770315fea3da554d7a03d23c2ddbbd96203e101a6132239a570cdd6f0d658d4"
 }
 
