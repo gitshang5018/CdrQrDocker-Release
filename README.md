@@ -4,11 +4,16 @@
 
 ---
 
-## 🚀 快速安装
+## 🚀 快速下载与安装
 
-1. 前往本仓库的 [Releases 发行版页面](../../releases)；
-2. 下载最新的 **`CorelDraw插件安装程序.exe`**；
-3. 双击运行安装程序，一键检测并安装到您电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
+### 1. 全量安装程序（推荐新用户）
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.2.6)](CorelDraw插件安装程序.exe)
+- **国内加速下载**：[通过 nuima.cc.cd 加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
+- **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
+
+### 2. 免重启热更补丁（老用户静默或手动升级）
+- **补丁直接下载**：[CdrQrDocker.Core.zip (2.45 MB)](CdrQrDocker.Core.zip)
+- **国内加速下载**：[通过 nuima.cc.cd 加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip)
 
 ---
 
