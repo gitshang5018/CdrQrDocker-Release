@@ -7,22 +7,28 @@
 ## 🚀 快速下载与安装
 
 ### 1. 全量安装程序（推荐新用户）
-- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.2.6)](CorelDraw插件安装程序.exe)
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.3.0)](CorelDraw插件安装程序.exe)
 - **国内加速下载**：[通过 nuima.cc.cd 加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
 - **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
 
 ### 2. 免重启热更补丁（老用户静默或手动升级）
-- **补丁直接下载**：[CdrQrDocker.Core.zip (2.45 MB)](CdrQrDocker.Core.zip)
+- **补丁直接下载**：[CdrQrDocker.Core.zip (2.55 MB)](CdrQrDocker.Core.zip)
 - **国内加速下载**：[通过 nuima.cc.cd 加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip)
 
 ---
 
-## ⚡ 在线更新机制说明
+## ⚡ v2.0.3.0 更新亮点
 
-本插件已内置**双通道在线更新系统**：
-- **日常热更补丁（Hotfix）**：无需重启或退出 CorelDraw，点击更新后由内部无锁内存重载引擎即时生效；
-- **重大版本升级（Major）**：一键调起最新安装程序进行全量安全更新；
-- **国内网络加速**：默认通过 `nuima.cc.cd` 代理镜像加速访问，无需配置任何代理软件。
+1. **全面代码混淆与 C++ 核心混合安全防护**：
+   - 引入 C++ 原生机器码动态库 `CdrQrCoreNative.dll`（/MT 静态编译，零外部运行时依赖）；
+   - 集成 Obfuscar 全量字符串加密与控制流平坦化混淆，彻底防御反编译与抄袭；
+2. **极速矢量巡边（免 AI 抠图）**：
+   - 彻底解除巡边功能对 AI 大模型（`modnet.onnx`）的依赖与下载卡顿；
+   - 支持透明通道极速巡边 + 普通白底/实色背景四角方差自适应采样，50~100 毫秒瞬间生成高精度矢量切割线；
+3. **性能大幅提升**：
+   - 异形排版算法实现一维内存复用与 C++ 原生位碰撞加速，计算速度提升 2.76 倍；
+4. **双通道免重启热更**：
+   - 客户端默认通过 `nuima.cc.cd` 加速镜像实现秒级检测与无缝更新。
 
 ---
 

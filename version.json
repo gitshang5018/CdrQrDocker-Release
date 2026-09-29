@@ -1,9 +1,9 @@
 {
-  "version": "2.0.2.6",
+  "version": "2.0.3.0",
   "type": "hotfix",
-  "title": "v2.0.2.6 双通道在线更新功能增强",
-  "changelog": "- 新增在线检测与双通道更新功能（支持免重启热更新）\n- 切换首选国内代理镜像为 nuima.cc.cd\n- 优化系统设置与版本信息展示",
+  "title": "v2.0.3.0 代码混淆保护与极速矢量巡边增强",
+  "changelog": "- 引入 C++ 原生机器码核心 (CdrQrCoreNative.dll) 与 Obfuscar 全量混淆保护，彻底防御反编译\n- 新增极速矢量巡边功能（免 AI 抠图，自适应背景色差采样，毫秒级出割线）\n- 异形排版核心算法下沉至 C++ 原生动态库，计算性能大幅提升",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "93ba6750f21011b2f2e2282de7e213805acccf46cc6e069083225c9ca9d33440"
+  "sha256": "14d8768b3c928b52c1fdd66f05d3c280b37dd0fcbc8e91458588f7cd806564cf"
 }
