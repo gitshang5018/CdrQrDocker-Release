@@ -2,7 +2,7 @@
   "version": "2.0.2.6",
   "type": "hotfix",
   "title": "v2.0.2.6 双通道在线更新功能增强",
-  "changelog": "- 新增在线检测与双通道更新功能（支持免重启热更新）\n- 切换首选国内代理镜像为 github.240218.xyz\n- 优化系统设置与版本信息展示",
+  "changelog": "- 新增在线检测与双通道更新功能（支持免重启热更新）\n- 切换首选国内代理镜像为 nuima.cc.cd\n- 优化系统设置与版本信息展示",
   "hotfix_url": "https://github.com/gitshang5018/CdrQrDocker-Release/releases/download/v2.0.2.6/CdrQrDocker.Core.zip",
   "installer_url": "https://github.com/gitshang5018/CdrQrDocker-Release/releases/download/v2.0.2.6/CorelDraw插件安装程序.exe",
   "sha256": ""
