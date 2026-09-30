@@ -1,9 +1,9 @@
 {
   "version": "2.0.4.2",
   "type": "hotfix",
-  "title": "v2.0.4.2 修复COM事件混淆闪退、新增顶部检查更新与出厂自动热更",
-  "changelog": "- 修复 CorelDraw COM 事件 DispId 混淆报错（解决悬浮工具条闪退问题）\n- 泊坞窗顶部常驻增加当前版本状态与一键「检查更新」按钮\n- 热更完成后自动唤醒宿主就地热重载，无需重启 CorelDraw\n- 单文件安装程序全面升级：自动初始化 %LocalAppData% 版本库，出厂即享纯内存无锁热更",
+  "title": "v2.0.4.2 修复文档漂白、倾斜矫正与AI抠图原生混淆与路径异常",
+  "changelog": "- 修复文档漂白由于OpenCvSharp原生P/Invoke混淆导致的类型初始值设定项异常\n- 修复纯内存加载下因Assembly.Location为空导致的倾斜矫正与AI抠图路径异常\n- 增强安全物理目录自适应检索与原生DLL依赖预加载\n- 完善CorelDraw COM事件与免重启热重载白名单保护",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "28a6ecd8264e8ebf53155b22a1a67a170b85da4a9f3ac70817254443ddb4d737"
+  "sha256": "A54DBB3E3373F05037CC3571C600AD1EAA100EBF0146F6C5CD94D7F2B9BA45A9"
 }
