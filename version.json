@@ -2,8 +2,8 @@
   "version": "2.0.4.3",
   "type": "hotfix",
   "title": "v2.0.4.3 修复文档漂白、倾斜矫正与AI抠图原生混淆与路径异常",
-  "changelog": "- 修复文档漂白由于OpenCvSharp原生P/Invoke混淆导致的类型初始值设定项异常\n- 修复纯内存加载下因Assembly.Location为空导致的倾斜矫正与AI抠图路径异常\n- 增强安全物理目录自适应检索与原生DLL依赖预加载\n- 完善CorelDraw COM事件与免重启热重载白名单保护",
+  "changelog": "- 修复文档漂白由于OpenCvSharp原生P/Invoke混淆导致的类型初始值设定项异常\n- 修复纯内存加载下因Assembly.Location为空导致的倾斜矫正与AI抠图路径异常\n- 增强安全物理目录自适应检索与原生DLL依赖预加载\n- 彻底消除热更回调中STA COM终结器等待死锁与调度卡顿",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "797D075F6091FE6B32768A415D96F8C2F0CD7B96DC56497B8038539605CA8A1F"
+  "sha256": "FA427B366A60D9493A441B39C07D3C8EAFD0B2BDB1AEB4B1F41A82BAEE5C00A6"
 }
