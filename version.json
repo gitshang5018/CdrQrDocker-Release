@@ -5,6 +5,6 @@
   "changelog": "- 建立宿主单例程序集缓存防线，彻底消除多次内存加载造成的跨控件状态隔离问题\n- 恢复悬浮工具条正常弹出显示与选区联动\n- 恢复转曲保存路径读取与一键保存功能\n- 强化转曲保存路径回退防御与无UI后台容灾兜底",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "b16941d9d150de4825a33cfe94d4cdeb704ba37b178086751c72b0ac3472256c"
+  "sha256": "e4ed19c56f50c7ce80bd7f9cc438397808137dddbca6d40071fd9ebd3b44eda8"
 }
 
