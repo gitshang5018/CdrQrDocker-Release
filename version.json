@@ -5,5 +5,5 @@
   "changelog": "- 修复 CorelDraw COM 事件 DispId 混淆报错（解决悬浮工具条闪退问题）\n- 泊坞窗顶部常驻增加当前版本状态与一键「检查更新」按钮\n- 热更完成后自动唤醒宿主就地热重载，无需重启 CorelDraw\n- 单文件安装程序全面升级：自动初始化 %LocalAppData% 版本库，出厂即享纯内存无锁热更",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "4f85dec215ea1e342e1b161d9e5472d5cb9ec5ef2418d6f1024eeb410839e5b8"
+  "sha256": "28a6ecd8264e8ebf53155b22a1a67a170b85da4a9f3ac70817254443ddb4d737"
 }
