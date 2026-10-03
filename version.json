@@ -1,10 +1,11 @@
 {
-  "version": "2.0.4.6",
+  "version": "2.0.4.7",
   "type": "hotfix",
-  "title": "v2.0.4.6 悬浮工具条极速响应与排版优化",
-  "changelog": "- 悬浮工具条：彻底切除 UI 路径同步磁盘 I/O 日志，消除微卡顿\n- 悬浮工具条：合并多步 Dispatcher.Invoke 为单次原子渲染，防止视觉抖动\n- 悬浮工具条：引入模式缓存与幂等短路，避免 40+ 控件无谓重排\n- 悬浮工具条：选区分析加入上限剪枝与轻量段落探测，杜绝千级大图元遍历 COM 阻塞\n- 智能优排：默认底板尺寸 1200*2400 mm，间距 10 mm",
+  "title": "v2.0.4.7 悬浮工具条选区贴身跟随与 C++ 原生视口挂钩",
+  "changelog": "- 悬浮工具条：全面升级为贴身跟随被选图形，优先停靠于选区正上方，贴顶时智能翻转至正下方\n- C++ 原生视口挂钩：通过 Win32 SetWindowSubclass 原生挂接画布视口，中键拖拽/空格漫游时 60FPS 零延迟同步平移工具条\n- 双层协同校准：拖拽停止与滚轮缩放静止后自动触发亚像素级 DocumentToScreen 精准坐标复核\n- 视口出界保护：选区完全滚出画布视口时自动隐匿，重新滚回视口时自动恢复\n- 健壮生命周期：实现防崩溃降级机制与安全解挂，彻底杜绝孤儿 HWND 与跨线程竞争",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "90FB98BCF5A5C67487E931913A2BCF9EB2EB6055013B83D63F27ED54D4A96B93"
+  "sha256": "172FB7F05DFDF8DAF9658BA4F6E9855050EEF74E3B33026EB6C4FE9710A10D2C"
 }
+
 
