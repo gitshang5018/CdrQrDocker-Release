@@ -1,9 +1,9 @@
 {
-  "version": "2.0.4.4",
+  "version": "2.0.4.5",
   "type": "hotfix",
-  "title": "v2.0.4.4 修复热更版本目录与更新包残留堆积",
-  "changelog": "- 热更新成功后仅保留当前激活版本，自动清理历史版本目录\n- 自动删除已应用的热更压缩包，避免 Updates 目录持续占用空间\n- 修复 CleanupOldVersions(keepCount) 语义，确保 keepCount=1 时仅保留当前版本",
+  "title": "v2.0.4.5 4大核心模块 C++ 原生加速上线与性能飞跃",
+  "changelog": "- 截图隐形水印：C++ 原生像素位运算合成打底，百万像素级毫秒级瞬时完成\n- 二维码识别兜底：外层全局积分图单次复用，网格二值化采样提速数倍\n- 异形排版：Chamfer 5-7-11 快速八邻域膨胀与同源三角函数批量多角度栅格化\n- 智能抠图精修：C++ 原生 Alpha 边缘精修与双模式色彩去污染内核全面上线",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "654B61724CB22CBF3FA04E8CEFED93937AEE1BACBE196A0D70CA7FD5D2710E08"
+  "sha256": "692A2F373AB6628F28FD57BCC071660D2B6A5392C722478ABD6DF8C1CB316FA7"
 }
