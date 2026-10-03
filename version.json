@@ -1,12 +1,13 @@
 {
-  "version": "2.0.4.8",
+  "version": "2.0.4.9",
   "type": "hotfix",
-  "title": "v2.0.4.8 悬浮工具条最小化联动与体验修复",
-  "changelog": "- 悬浮工具条：彻底修复 CorelDRAW 最小化后工具栏孤立悬浮在桌面的问题\n- 操作系统级归属：绑定 CorelDRAW 主窗口为拥有者 (Owner)，Win32 内核级自动跟随最小化与恢复\n- 原生视口消息拦截：在 C++ 原生钩子中捕获 WM_SHOWWINDOW 与 WM_WINDOWPOSCHANGED，视口隐藏时毫秒级瞬时同步隐匿\n- 托管状态防漏：CheckSelectionChange 与 ShowFloatingToolbarNearSelection 主动判定 IsIconic，杜绝最小化状态下的误弹出",
+  "title": "v2.0.4.9 悬浮工具条默认左对齐与间距布局调整",
+  "changelog": "- 悬浮工具条：根据操作习惯全面调整默认布局规则\n- 默认停靠位置：由原先顶部居中调整为默认停靠在对象的正下方\n- 水平对齐方式：由原先水平居中对齐调整为与选中对象左边对齐\n- 垂直间距：设定为精准距离对象下方 20 像素（带 DPI 自适应换算）\n- 智能安全翻转：若视口底部空间不足且顶部开阔，自动向上翻转停靠，保证工具栏完整可见",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "FEBD4AF36482467E92C788895B8CEFF2A7CE06F3AA1882F4FF4FA0D0EC7199B6"
+  "sha256": "8F184B03D042131C2E9E968351FC186E7C42FAE4D70D5E6BBB3D3F8C720D792D"
 }
+
 
 
 
