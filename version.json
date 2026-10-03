@@ -1,9 +1,9 @@
 {
   "version": "2.0.4.5",
   "type": "hotfix",
-  "title": "v2.0.4.5 4大核心模块 C++ 原生加速上线与性能飞跃",
-  "changelog": "- 截图隐形水印：C++ 原生像素位运算合成打底，百万像素级毫秒级瞬时完成\n- 二维码识别兜底：外层全局积分图单次复用，网格二值化采样提速数倍\n- 异形排版：Chamfer 5-7-11 快速八邻域膨胀与同源三角函数批量多角度栅格化\n- 智能抠图精修：C++ 原生 Alpha 边缘精修与双模式色彩去污染内核全面上线",
+  "title": "v2.0.4.5 性能飞跃与优排参数优化",
+  "changelog": "- 智能优排：默认底板尺寸调整为 1200*2400 mm，默认间距调整为 10 mm\n- 截图隐形水印：C++ 原生像素位运算合成打底，百万像素级毫秒级瞬时完成\n- 二维码识别兜底：外层全局积分图单次复用，网格二值化采样提速数倍\n- 异形排版：Chamfer 5-7-11 快速八邻域膨胀与同源三角函数批量多角度栅格化\n- 智能抠图精修：C++ 原生 Alpha 边缘精修与双模式色彩去污染内核全面上线",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "692A2F373AB6628F28FD57BCC071660D2B6A5392C722478ABD6DF8C1CB316FA7"
+  "sha256": "584A8CABAFCBEF9B70A68829CE576F24437C8DD37A6001D743F77A0ED7A0CAC3"
 }
