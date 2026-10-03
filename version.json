@@ -1,11 +1,12 @@
 {
-  "version": "2.0.4.7",
+  "version": "2.0.4.8",
   "type": "hotfix",
-  "title": "v2.0.4.7 悬浮工具条选区贴身跟随与 C++ 原生视口挂钩",
-  "changelog": "- 悬浮工具条：全面升级为贴身跟随被选图形，优先停靠于选区正上方，贴顶时智能翻转至正下方\n- C++ 原生视口挂钩：通过 Win32 SetWindowSubclass 原生挂接画布视口，中键拖拽/空格漫游时 60FPS 零延迟同步平移工具条\n- 双层协同校准：拖拽停止与滚轮缩放静止后自动触发亚像素级 DocumentToScreen 精准坐标复核\n- 视口出界保护：选区完全滚出画布视口时自动隐匿，重新滚回视口时自动恢复\n- 健壮生命周期：实现防崩溃降级机制与安全解挂，彻底杜绝孤儿 HWND 与跨线程竞争",
+  "title": "v2.0.4.8 悬浮工具条最小化联动与体验修复",
+  "changelog": "- 悬浮工具条：彻底修复 CorelDRAW 最小化后工具栏孤立悬浮在桌面的问题\n- 操作系统级归属：绑定 CorelDRAW 主窗口为拥有者 (Owner)，Win32 内核级自动跟随最小化与恢复\n- 原生视口消息拦截：在 C++ 原生钩子中捕获 WM_SHOWWINDOW 与 WM_WINDOWPOSCHANGED，视口隐藏时毫秒级瞬时同步隐匿\n- 托管状态防漏：CheckSelectionChange 与 ShowFloatingToolbarNearSelection 主动判定 IsIconic，杜绝最小化状态下的误弹出",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "172FB7F05DFDF8DAF9658BA4F6E9855050EEF74E3B33026EB6C4FE9710A10D2C"
+  "sha256": "FEBD4AF36482467E92C788895B8CEFF2A7CE06F3AA1882F4FF4FA0D0EC7199B6"
 }
+
 
 
