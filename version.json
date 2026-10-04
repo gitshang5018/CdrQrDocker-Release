@@ -1,9 +1,9 @@
 {
-  "version": "2.0.5.1",
+  "version": "2.0.5.2",
   "type": "hotfix",
-  "title": "v2.0.5.1 通用抠图预处理归一化修复与多目标自动拆分优化",
-  "changelog": "- 通用抠图预处理张量归一化规范化：严格按照 RMBG-1.4 规范修正中心对称归一化 (x/255 - 0.5)，彻底解决主体误抠与颜色空间失真\n- Alpha 通道 Min-Max 动态拉伸与底噪消除：原生 C++ 与托管回退同步实施极值拉伸与弱背景截断，根除抠图残留白雾与杂色底噪\n- 连通域多目标自动拆分抗噪优化：二值化阈值提升至 20 并引入 0.1% 画布面积过滤，根治微小杂点导致的过度碎块拆分\n- 高保真双三次插值重构：规范化空间后采样，保障高分辨率输出边缘细腻平滑无锯齿",
+  "title": "v2.0.5.2 彻底还原纯净通用抠图算法与印章原色保真拆分修复",
+  "changelog": "- 通用抠图彻底还原为纯净托管流程：完全直通原图 RGB 色彩与原始 Alpha，彻底移除任何去饱和、边缘灰度混合及 Alpha 非线性收缩，100% 完整保留印章黄色底色与鲜艳度\n- 恢复经典 BFS 连通域自动拆分：基于二值连通域直接提取独立对象外接矩形框，准确将不相连的印章独立拆分成 CorelDRAW 图元对象\n- 通用抠图完全解耦原生 C++ 依赖：通用抠图直通托管 ImageSharp 高保真 Bicubic 插值与 OnnxRuntime 推理，免疫 Windows DLL 进程常驻锁定",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "1B1443118484790B5E3F20E006D6E57E2FDD4242ED71E7DDBAE812F2F075C322"
+  "sha256": "A6490043B0E7AF3B1CD44DB590CF0A66ABC18C431097D55E28DB9C13A7812835"
 }
