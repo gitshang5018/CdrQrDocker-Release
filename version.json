@@ -1,13 +1,9 @@
 {
-  "version": "2.0.4.9",
+  "version": "2.0.5.0",
   "type": "hotfix",
-  "title": "v2.0.4.9 悬浮工具条默认左对齐与间距布局调整",
-  "changelog": "- 悬浮工具条：根据操作习惯全面调整默认布局规则\n- 默认停靠位置：由原先顶部居中调整为默认停靠在对象的正下方\n- 水平对齐方式：由原先水平居中对齐调整为与选中对象左边对齐\n- 垂直间距：设定为精准距离对象下方 20 像素（带 DPI 自适应换算）\n- 智能安全翻转：若视口底部空间不足且顶部开阔，自动向上翻转停靠，保证工具栏完整可见",
+  "title": "v2.0.5.0 实用工具与抠图导出混淆修复及体验升级",
+  "changelog": "- 实用工具面板精简：移除冗余选择工具与对齐分布，突出核心排版与图像处理\n- 修复图片导出指定路径失效：重构显式参数字典彻底免疫 Release 混淆重命名，开放自由输入路径与一键提取所在目录\n- 修复抠图背景替换与证件照尺寸失效：彻底阻断混淆改名，补齐 6 色背景单选实时预览联动\n- 全局混淆策略安全治理：关闭属性重命名，从根源消除所有面板参数序列化丢失隐患\n- 悬浮工具条贴身锚定与位置优化：支持依附对象下方左对齐与最小化自动隐藏\n- C++原生高性能引擎集成：PLT 刻绘闭环重排、异形排料 2.0 孔洞套排与矢量极速巡边",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "8F184B03D042131C2E9E968351FC186E7C42FAE4D70D5E6BBB3D3F8C720D792D"
+  "sha256": "64A523CF9ABDED5091EABB5E1CEF8BD972BB2599BA9C5023BAA001FA45B9C462"
 }
-
-
-
-
