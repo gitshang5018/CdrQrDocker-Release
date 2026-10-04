@@ -5,5 +5,5 @@
   "changelog": "- 通用抠图预处理张量归一化规范化：严格按照 RMBG-1.4 规范修正中心对称归一化 (x/255 - 0.5)，彻底解决主体误抠与颜色空间失真\n- Alpha 通道 Min-Max 动态拉伸与底噪消除：原生 C++ 与托管回退同步实施极值拉伸与弱背景截断，根除抠图残留白雾与杂色底噪\n- 连通域多目标自动拆分抗噪优化：二值化阈值提升至 20 并引入 0.1% 画布面积过滤，根治微小杂点导致的过度碎块拆分\n- 高保真双三次插值重构：规范化空间后采样，保障高分辨率输出边缘细腻平滑无锯齿",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "861EC87D5EDAD8C723D5E0861A474A7500A9A6D0C4BEB1261D3031570C92C56E"
+  "sha256": "1B1443118484790B5E3F20E006D6E57E2FDD4242ED71E7DDBAE812F2F075C322"
 }
