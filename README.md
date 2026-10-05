@@ -1,13 +1,13 @@
-# CorelDraw AI工具箱 (CdrQrDocker) - 发布与分发中心
+# PrePress Master 印前大师 (CdrQrDocker) - 发布与分发中心
 
-本项目是 **CdrQrDocker (CorelDraw 智能辅助插件与 AI 工具箱)** 的官方公开分发与在线更新中心。
+本项目是 **PrePress Master 印前大师 (CorelDraw 工业级印前自动化扩展系统)** 的官方公开分发与在线更新中心。
 
 ---
 
 ## 🚀 快速下载与安装
 
 ### 1. 全量安装程序（推荐新用户）
-- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.5.2)](CorelDraw插件安装程序.exe)
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.6.0)](CorelDraw插件安装程序.exe)
 - **国内加速下载**：[通过 nuima.cc.cd 加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
 - **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
 
@@ -17,15 +17,21 @@
 
 ---
 
-## ⚡ v2.0.5.2 更新亮点
+## ⚡ v2.0.6.0 更新亮点
 
-1. **通用抠图彻底还原为纯净托管流程**：
-   - 完全直通原图 RGB 色彩与原始 Alpha，彻底移除任何去饱和、边缘灰度混合及 Alpha 非线性收缩，100% 完整保留印章黄色底色与鲜艳度；
-   - 彻底解决黄色圆形底色被误洗白、变成极浅微白半透明圈的缺陷。
-2. **恢复经典 BFS 连通域自动拆分**：
-   - 基于二值连通域直接提取独立对象外接矩形框，准确将不相连的印章独立拆分成 CorelDRAW 图元对象。
-3. **通用抠图完全解耦原生 C++ 依赖**：
-   - 通用抠图直通托管 ImageSharp 高保真 Bicubic 插值与 OnnxRuntime 推理，免疫 Windows DLL 进程常驻锁定。
+1. **品牌升级与原生双轨底座重构 (PrePress Master)**：
+   - 全面升级产品品牌为 PrePress Master（印前大师），引入全新的 `PrePressCore.dll` 与 `PrePressBridge` 双轨 P/Invoke 架构；
+   - 建立全生命周期 C/C++ 内存护盾与防御机制，原生模块与托管层零句柄挂留、零内存漂移。
+2. **几何与排料高能原生化引擎 (NativeGeometryEngine & NativeNestingEngine)**：
+   - 采用纯 C++ 高性能算法解算多边形骨架外扩、轮廓偏移与刀路排序优化；
+   - 启发式自适应异形排料防碰撞检测，大幅缩短复杂图元的解算耗时。
+3. **图像与 AI 抠图全闭环原生引擎 (NativeAiEngine & NativeWicCodec)**：
+   - 基于 DirectML GPU 与多线程 CPU 动态降级的通用 ONNX Runtime C-API 治理引擎；
+   - WIC 零磁盘 I/O 高性能图像解码与编码、动态极值扫描与背景噪声截断、精细边缘平滑修整。
+4. **条码/二维码矢量原生化与 VDP 生产排版加速 (NativeBarcodeEngine & NativeVdpLayoutEngine)**：
+   - 遵循 ISO/IEC 18004 与 ISO/IEC 15417 规范的纯原生 QR Code 与 Code128 编码器；
+   - 工业级 RLE 水平相连暗模块合并算法，图元数量直降 80% 以上；
+   - 10,000 张可变数据卡片阵列与高精裁切角线 24ms 极速解算，全面替代低效磁盘临时文件。
 
 ---
 
