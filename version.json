@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6.3",
+  "version": "2.0.6.4",
   "type": "release",
-  "title": "v2.0.6.3 悬浮工具条底部居中与水平左边缘锁定优化",
-  "changelog": "- 优化悬浮工具条定位机制：首次激活底部居中锁定 X 坐标\n- 连续切换选择对象时左边缘严格固定保持不动，彻底解决两端左右跳动与晃眼问题\n- 智能右界防溢出：宽模式自动向左收敛贴齐安全边距，确保所有按钮完整可见\n- 强化全生命周期重置：取消选中隐藏、视口缩放/面板折叠、切换文档或窗口时可靠重置居中",
+  "title": "v2.0.6.4 彻底剥离 OpenCV，原生 NativeImageEngine 重构与安装包暴降 70%",
+  "changelog": "- 架构轻量化突破：全面移除 OpenCvSharp 依赖与 62MB 的 OpenCvSharpExtern.dll，安装包体积暴降 70%（由 70MB 骤降至 19MB）\n- 原生图像引擎重构：文档漂白去底、四边形透视拉直、任意角度仿射旋转全面采用 C++ 原生 NativeImageEngine 加速\n- 二维码识别解耦：平稳切换至纯托管高性能 ZXing 引擎与原生二值化预处理\n- 运行环境零冲突：彻底杜绝 CorelDRAW 宿主因 OpenCV DLL 路径冲突或版本污染导致的闪退",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "C71D69BA26C428D25AF5AF9E1682BF029E67A8FA1CF6F3E46E028442821CBA69"
+  "sha256": "3FAE2555074D19594E75E38AEC84549B5EB78956ED881E440DBF1BCF1FA0080F"
 }
