@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6.1",
+  "version": "2.0.6.3",
   "type": "release",
-  "title": "v2.0.6.1 PrePress Master 印前大师四大原生引擎重构震撼发布",
-  "changelog": "- 架构底座与品牌升级：全面重塑为 PrePress Master（印前大师），引入 PrePressCore 与 PrePressBridge 原生双轨架构与全生命周期内存护盾\n- 几何与异形排料原生引擎：NativeGeometryEngine 与 NativeNestingEngine 实现多边形骨架外扩、刀路平滑与启发式防碰撞极速排料\n- 图像与 AI 抠图全闭环原生引擎：基于 DirectML/CPU 动态降级的通用 ONNX Runtime C-API 与 WIC 内存流闭环，实现超清去噪与边缘精修\n- 条码与 VDP 生产排版加速：纯原生 ISO QR Code 与 Code128 矢量生成，RLE 连续暗模块合并减少 80%+ 图元，10,000 张卡片角线与阵列 24ms 极速解算\n- 修复多目标抠图包围盒交叉残留切片问题：恢复连通域像素级独立遮罩隔离与微小杂斑过滤\n- 升级热更新检测机制：引入基于 SHA256 文件指纹的双轨智能检测，云端补丁哈希变动自动触发热更，告别频繁修改版本号",
+  "title": "v2.0.6.3 悬浮工具条底部居中与水平左边缘锁定优化",
+  "changelog": "- 优化悬浮工具条定位机制：首次激活底部居中锁定 X 坐标\n- 连续切换选择对象时左边缘严格固定保持不动，彻底解决两端左右跳动与晃眼问题\n- 智能右界防溢出：宽模式自动向左收敛贴齐安全边距，确保所有按钮完整可见\n- 强化全生命周期重置：取消选中隐藏、视口缩放/面板折叠、切换文档或窗口时可靠重置居中",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "8201F48605B5F7B5D116769E21D06DFA89B34A54B1D8418D8E8C5271D27A6273"
+  "sha256": "C71D69BA26C428D25AF5AF9E1682BF029E67A8FA1CF6F3E46E028442821CBA69"
 }
