@@ -7,19 +7,27 @@
 ## 🚀 快速下载与安装
 
 ### 1. 全量安装程序（推荐新用户）
-- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.6.0)](CorelDraw插件安装程序.exe)
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.6.5)](CorelDraw插件安装程序.exe)
 - **国内加速下载**：[通过 nuima.cc.cd 加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
 - **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
 
 ### 2. 免重启热更补丁（老用户静默或手动升级）
-- **补丁直接下载**：[CdrQrDocker.Core.zip (2.60 MB)](CdrQrDocker.Core.zip)
+- **补丁直接下载**：[CdrQrDocker.Core.zip (2.56 MB)](CdrQrDocker.Core.zip)
 - **国内加速下载**：[通过 nuima.cc.cd 加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip)
 
 ---
 
-## ⚡ v2.0.6.0 更新亮点
+## ⚡ v2.0.6.5 更新亮点
 
-1. **品牌升级与原生双轨底座重构 (PrePress Master)**：
+1. **“印前大师”品牌形象全面规范化**：
+   - 用户界面、更新弹窗标题与提示文案全面规范统一为“印前大师”；
+   - 包含《用户手册》与《说明文档》无遗漏对齐。
+2. **智能默认路径平滑兼容**：
+   - 默认存储路径全新升级为“文档\印前大师”，并具备历史目录“文档\CdrQrDocker”后向探测与无损过渡机制。
+3. **彻底剥离 OpenCV，原生 NativeImageEngine 重构**：
+   - 移除非托管 OpenCV 依赖，安装包轻量化至 19.8MB，文档漂白、透视变换与二值化全面采用 C++ 原生引擎加速。
+4. **防退化自动化测试守护**：
+   - 集成品牌文案与关键路径规范化自动化断言测试套件，确保系统长期稳定运行。
    - 全面升级产品品牌为 PrePress Master（印前大师），引入全新的 `PrePressCore.dll` 与 `PrePressBridge` 双轨 P/Invoke 架构；
    - 建立全生命周期 C/C++ 内存护盾与防御机制，原生模块与托管层零句柄挂留、零内存漂移。
 2. **几何与排料高能原生化引擎 (NativeGeometryEngine & NativeNestingEngine)**：
