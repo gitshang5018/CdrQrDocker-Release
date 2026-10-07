@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6.6",
+  "version": "2.0.6.7",
   "type": "release",
-  "title": "v2.0.6.6 修复文档漂白与原生图像算法库智能寻径",
-  "changelog": "- 修复文档漂白异常：重构原生算法桥接层为动态委托绑定，彻底消除宿主环境 DLL 模块阴影冲突\n- 智能寻径与热更保障：优先加载最新热更新版本原生核心，确保高版本算法库精准生效\n- 运行健壮性提升：多层路径探测与优雅降级保护，提升多版本兼容性",
+  "title": "v2.0.6.7 彻底消除图像矫正与漂白导入CorelDraw的缩放闪烁",
+  "changelog": "- 优化导入交互体验：全面应用 CdrBatchScope 事务屏障，导入替换新图时挂起画面重绘与事件刷新，彻底消除图片一闪而过的缩放和跳动过程\n- 原子化尺寸与坐标设置：使用 SetPosition 与 SetSize 一步到位设定几何范围，平滑无感替换原有图形\n- 维持完美层级：新图原子化继承原图 Z-Order 层级并自动选定，交互更流畅",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "6FDD28367140CF1DD9CDDCCDC617F3B623A91A098C28542A83FE7DCB46CCD212"
+  "sha256": "CF6D24160DCC3257B9E17B87EC995AA83E9F0D89305308CF25AA7A218B425135"
 }
