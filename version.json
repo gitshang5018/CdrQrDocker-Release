@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6.9",
+  "version": "2.0.7.0",
   "type": "hotfix",
-  "title": "v2.0.6.9 AI模型官方发布仓库托管与高速下载重构",
-  "changelog": "- AI模型全量发布托管：所有AI抠图(RMBG/MODNet)、AI矫正(DocAligner/Orient)、超分引擎(Real-ESRGAN/11套权重)及二维码权重统一推送到官方Release仓库\n- 模型下载链路重构：所有下载链接切换至官方Release仓库，支持多镜像自适应加速与Git LFS防损坏流式拉取\n- 矢量巡边高精平滑与自动置入集成优化",
+  "title": "v2.0.7.0 巡边引擎平滑降级兼容、非模态免锁窗与主题自适应",
+  "changelog": "- 原生巡边引擎平滑降级：增强多路径加载与符号缺失降级回退，即使旧出厂DLL被CorelDraw锁定也能无缝提取轮廓\n- 巡边窗口非模态免阻塞：巡边参数窗口支持非模态操作，点开后依然可自由点击CorelDraw画布、平移与切换选区\n- 主题颜色自适应：全面对接CorelDraw深色/浅色主题系统，告别突兀黑框\n- AI模型集中托管与高速下载重构",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "01954A6E978CAEEB657F775D135D3842263A19ED6534471A85D1A31BB11BD4C6"
+  "sha256": "86557A6A33E8F913198EFE772630C6A4BA6FFB5C22F857128A50E4A17CA7377F"
 }
