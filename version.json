@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6.5",
+  "version": "2.0.6.6",
   "type": "release",
-  "title": "v2.0.6.5 全面升级“印前大师”品牌与界面文案规范化",
-  "changelog": "- 品牌形象全面升级：用户界面全面统一规范为“印前大师”，更新窗口标题、弹窗与用户手册零遗漏对齐\n- 智能兼容平滑过渡：默认保存路径全新适配“文档\\印前大师”，智能后向兼容历史保存目录，保障数据无损\n- 卸载向导文案优化：明确清晰的删除与清理提示\n- 防退化自动化守护：集成全套品牌文案零遗漏断言测试，保障后续迭代体验一致",
+  "title": "v2.0.6.6 修复文档漂白与原生图像算法库智能寻径",
+  "changelog": "- 修复文档漂白异常：重构原生算法桥接层为动态委托绑定，彻底消除宿主环境 DLL 模块阴影冲突\n- 智能寻径与热更保障：优先加载最新热更新版本原生核心，确保高版本算法库精准生效\n- 运行健壮性提升：多层路径探测与优雅降级保护，提升多版本兼容性",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "7CBCA3B7C00CDCE6893FE09279857F8CEF4BA3EBAC71BCAFD79385B56839E74D"
+  "sha256": "6FDD28367140CF1DD9CDDCCDC617F3B623A91A098C28542A83FE7DCB46CCD212"
 }
