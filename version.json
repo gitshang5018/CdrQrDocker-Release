@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.0",
+  "version": "2.0.7.1",
   "type": "hotfix",
-  "title": "v2.0.7.0 巡边引擎平滑降级兼容、非模态免锁窗、主题自适应与全套增强模型极速直链下载",
-  "changelog": "- 增强模型下载补全：完整支持 UltraSharp (超清)、Remacri (写实)、Digital Art (插画) 等高质量引擎权重的按需秒级下载与别名自适应\n- AI模型下载重构：彻底解决卡在‘尝试备用线路重新连接’问题，全面接入国内多镜像代理与单文件直链极速下载\n- 原生巡边引擎平滑降级：增强多路径加载与符号缺失降级回退，即使旧出厂DLL被CorelDraw锁定也能无缝提取轮廓\n- 巡边窗口非模态免阻塞：巡边参数窗口支持非模态操作，点开后依然可自由点击CorelDraw画布、平移与切换选区\n- 主题颜色自适应：全面对接CorelDraw深色/浅色主题系统，告别突兀黑框",
+  "title": "v2.0.7.1 授权安全体系升级、隐藏后台加密端点与激活码密文遮蔽",
+  "changelog": "- 授权安全体系全面升级：授权服务器地址在界面完全隐藏，底层改由原生C++滚动异或掩码混淆解密，本地配置彻底剔除明文信息\n- 激活码输入全面密文遮蔽：输入与展示全面切换为PasswordBox，界面以圆点密文保护，杜绝屏幕泄露\n- 智能双重授权守卫：启动时毫秒级本地硬件离线校验无感放行，后台异步静默心跳自动续期7天离线宽限期\n- 增强服务端错误友好提示：细化授权已登记、机器绑定与异常响应中文解释，提升激活体验",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "807E8DAAA657596025B2FCDE6E28F9E937D03D6AAA973E734DCA578798062EFE"
+  "sha256": "8B4BEA8AE61014899F5682EC26BD4104F3510A55B4448B3C156BBFDDFDEDF64C"
 }
