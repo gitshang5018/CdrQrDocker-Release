@@ -1,9 +1,9 @@
 {
-  "version": "2.0.6.7",
+  "version": "2.0.6.8",
   "type": "release",
-  "title": "v2.0.6.7 彻底消除图像矫正与漂白导入CorelDraw的缩放闪烁",
-  "changelog": "- 优化导入交互体验：全面应用 CdrBatchScope 事务屏障，导入替换新图时挂起画面重绘与事件刷新，彻底消除图片一闪而过的缩放和跳动过程\n- 原子化尺寸与坐标设置：使用 SetPosition 与 SetSize 一步到位设定几何范围，平滑无感替换原有图形\n- 维持完美层级：新图原子化继承原图 Z-Order 层级并自动选定，交互更流畅",
+  "title": "v2.0.6.8 矢量巡边亚像素高精平滑重构与自动置入",
+  "changelog": "- 亚像素级边缘提取：引入 Marching Squares 浮点插值算法，彻底消除硬二值化带来的像素锯齿与阶梯马赛克\n- 工业级贝塞尔曲线拟合：引入 Schneider 三次贝塞尔拟合算法，生成原生高精光滑曲线，节点数量精简 80%~98%，巡边机走刀极致顺滑\n- 矢量几何等距外扩：支持精确毫米级等距留白与圆弧外角过渡，取代离散位图膨胀\n- 新增参数设置面板：支持自定义外扩量、平滑度、细节精度、镂空保留与参数自动记忆\n- 新增自动置入功能：一键将原图精确裁切置入巡边容器（PowerClip），并维持顶层洋红割线与白底",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "CF6D24160DCC3257B9E17B87EC995AA83E9F0D89305308CF25AA7A218B425135"
+  "sha256": "4E0AB1FF2D423F854927C1B0F8737AD5A676D99E76F1C253D4C6DA8931771261"
 }
