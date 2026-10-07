@@ -1,3 +1,2 @@
-*.onnx filter=lfs diff=lfs merge=lfs -text
 Resources/realesrgan-ncnn-vulkan-20220424-windows.zip filter=lfs diff=lfs merge=lfs -text
-Resources/realesrgan-ncnn-vulkan.exe filter=lfs diff=lfs merge=lfs -text
+Resources/rmbg-1.4.onnx filter=lfs diff=lfs merge=lfs -text
