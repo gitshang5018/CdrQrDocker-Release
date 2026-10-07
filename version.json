@@ -5,5 +5,5 @@
   "changelog": "- 增强模型下载补全：完整支持 UltraSharp (超清)、Remacri (写实)、Digital Art (插画) 等高质量引擎权重的按需秒级下载与别名自适应\n- AI模型下载重构：彻底解决卡在‘尝试备用线路重新连接’问题，全面接入国内多镜像代理与单文件直链极速下载\n- 原生巡边引擎平滑降级：增强多路径加载与符号缺失降级回退，即使旧出厂DLL被CorelDraw锁定也能无缝提取轮廓\n- 巡边窗口非模态免阻塞：巡边参数窗口支持非模态操作，点开后依然可自由点击CorelDraw画布、平移与切换选区\n- 主题颜色自适应：全面对接CorelDraw深色/浅色主题系统，告别突兀黑框",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "379BDF7713D9AB8B67681D7547B23DB429F0937EEB627360EFC68EA77127C96F"
+  "sha256": "B2186C8C0AFF14B8166769BBE3DA5754DCE76ABE16F53DE660AFC3E8365E8758"
 }
