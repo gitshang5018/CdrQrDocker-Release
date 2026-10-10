@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.16",
+  "version": "2.0.7.17",
   "type": "hotfix",
-  "title": "v2.0.7.16 消除免抠巡边生成界面闪烁与转曲保存打开文件夹被挡修复",
-  "changelog": "- 彻底根除点击生成免抠图矢量巡边瞬间「一闪而过其他程序界面」的闪烁问题：移除进度提示窗的禁用激活限制，确保参数设置窗口与进度提示窗之间平滑无缝交接前台焦点，杜绝 Windows DWM 焦点回退\n- 彻底解决转曲保存完成后打开路径时资源管理器文件夹被 CorelDraw 窗口遮挡的问题：移除进度提示窗在 OnClosed 中延迟粗暴夺焦的副作用逻辑，将打开文件夹移至进度提示完全退出后执行，并引入强置顶机制确保文件夹稳定处于前台展示",
+  "title": "v2.0.7.17 转曲保存原生高精度定位打开与防止拉起多余文件夹修复",
+  "changelog": "- 引入 Windows 原生 Shell API（SHOpenFolderAndSelectItems）精准高亮选中转曲保存文件：彻底废除旧版 COM 枚举与 TopMost 提权黑魔法，杜绝打乱 Windows 资源管理器窗口组 Z 序引起的「把其他后台文件夹窗口一并唤起」问题\n- 保持免抠图矢量巡边参数设置窗口与进度提示窗无缝焦点交接，彻底根除点击瞬间一闪而过其他程序界面的闪烁问题\n- 确保转曲保存完成后仅有且精准将目标文件所在文件夹呈现于前台最顶层展示",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "B116DFF9F07274C3D2BD0856C5385D1BCEF000E2E660A514FCDBE486D2D15CD9"
+  "sha256": "A1864B2B95D6C992AECA3CA9A78B87B268A198CBFFA46865B096C4F39EF3E1C9"
 }
