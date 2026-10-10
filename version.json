@@ -1,9 +1,9 @@
 {
   "version": "2.0.7.10",
   "type": "hotfix",
-  "title": "v2.0.7.10 矢量巡边高精转角识别重构与真实物理尖角顶点保真修复",
-  "changelog": "- 攻克矢量巡边直角/锐角削角削平痛点：重构原生切向量角点检测算法（DetectMacroCorners），基于物理空间累积弧长微分（5.0px 窗口）与欧氏空间聚类抑制，根除平局丢弃与对称长边角点漏检缺陷\n- 引入自适应几何交点锐化微调（Corner Apex Miter Sharpening）：根据转向角自适应计算前后射线几何交点，精确顶回 Marching Squares 离散网格截角，割线顶点严格到达真实物理转角顶点，彻底消除红色外角外露与倒角削平\n- 直线段快速拟合通道：对平直边缘直接生成一次退化三次贝塞尔直线段，100% 笔直且杜绝波浪抖动\n- 保持单对象一体化融合、Stone-DeRose 弦投影单调与全域 0 自交死结（0 Knots）保障",
+  "title": "v2.0.7.10 字体全量枚举引擎恢复与巡边外扩直角精度重构",
+  "changelog": "- 字体管理全量枚举重构：引入 Win32 GDI 底层 EnumFontFamiliesEx P/Invoke 与系统/用户注册表（HKCU/HKLM）双路融合扫描，彻底解决用户字体与第三方商业字体缺失问题，字体识别量从 384 款恢复至 8400+ 款\n- 巡边外扩直角精度重构：彻底解决 EDT 欧氏距离场外扩圆角钝化与 Marching Squares 割角问题，基于多边形相邻主边中点切线求交与 CAD 正交吸附重构尖锐顶点，外扩矩形严格输出 4 段标准直线段，转角顶点物理误差极限收敛至 0.254mm\n- CorelDRAW 直线段原生生成支持：在 CorelHelper 中对平直轮廓直接调用 AppendLineSegment 与 Cusp 尖角节点，杜绝贝塞尔控制手柄圆滑化变形",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "3A244D69EAD81BEC8C3AD27A6BF3D536F51C846AF4FC75EB2ADFDF9DCE7C61EB"
+  "sha256": "2C9465F408735DC7CB4F4AF83CE813CD8820138B1FFE0AFCF97BC016F064B83F"
 }
