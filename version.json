@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.17",
+  "version": "2.0.7.18",
   "type": "hotfix",
-  "title": "v2.0.7.17 转曲保存原生高精度定位打开与防止拉起多余文件夹修复",
-  "changelog": "- 引入 Windows 原生 Shell API（SHOpenFolderAndSelectItems）精准高亮选中转曲保存文件：彻底废除旧版 COM 枚举与 TopMost 提权黑魔法，杜绝打乱 Windows 资源管理器窗口组 Z 序引起的「把其他后台文件夹窗口一并唤起」问题\n- 保持免抠图矢量巡边参数设置窗口与进度提示窗无缝焦点交接，彻底根除点击瞬间一闪而过其他程序界面的闪烁问题\n- 确保转曲保存完成后仅有且精准将目标文件所在文件夹呈现于前台最顶层展示",
+  "title": "v2.0.7.18 巡边原位内聚执行与彻底根除后台窗口唤起闪烁修复",
+  "changelog": "- 巡边生成单窗口原位内聚执行：点击确定生成不再通过关窗重新弹进度窗，直接在当前窗口原位呈现生成状态并绘制割线，从源头上彻底根除 DWM 焦点悬空唤起后台其他程序或文件夹的问题\n- Win32 AttachThreadInput 线程队列附加：强化 CorelDRAW 前台激活，穿透 Windows 前台锁限制，平滑交接焦点不闪烁\n- 维持转曲保存使用原生 Windows Shell API（SHOpenFolderAndSelectItems），仅精准置顶打开目标文件所在文件夹且不被遮挡",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "A1864B2B95D6C992AECA3CA9A78B87B268A198CBFFA46865B096C4F39EF3E1C9"
+  "sha256": "6EEB6B1D70D0219F28E3B7CC277DCFCE087A27785F93E38B5519A6385600A0F0"
 }
