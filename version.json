@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.10",
+  "version": "2.0.7.11",
   "type": "hotfix",
-  "title": "v2.0.7.10 字体全量枚举引擎恢复与巡边外扩直角精度重构",
-  "changelog": "- 字体管理全量枚举重构：引入 Win32 GDI 底层 EnumFontFamiliesEx P/Invoke 与系统/用户注册表（HKCU/HKLM）双路融合扫描，彻底解决用户字体与第三方商业字体缺失问题，字体识别量从 384 款恢复至 8400+ 款\n- 巡边外扩直角精度重构：彻底解决 EDT 欧氏距离场外扩圆角钝化与 Marching Squares 割角问题，基于多边形相邻主边中点切线求交与 CAD 正交吸附重构尖锐顶点，外扩矩形严格输出 4 段标准直线段，转角顶点物理误差极限收敛至 0.254mm\n- CorelDRAW 直线段原生生成支持：在 CorelHelper 中对平直轮廓直接调用 AppendLineSegment 与 Cusp 尖角节点，杜绝贝塞尔控制手柄圆滑化变形",
+  "title": "v2.0.7.11 字体管理秒开加速、字体显示名称规范化与字形艺术样式渲染恢复",
+  "changelog": "- 字体管理秒开加载加速：彻底移除 8400+ 款字体逐个进行 TryGetGlyphTypeface 串行磁盘字形预检的性能瓶颈，加载时间从数十秒骤降至毫秒级，实现面板瞬间秒开\n- 字体显示名称纯正规范：规范化字体家族显示名称，剔除 (TrueType) 技术标识与 Bold/Regular 等字重修饰词，恢复纯正规范的字体家族名称（如“微软雅黑”、“思源黑体 CN”、“方正超值体”），确保 CorelDRAW 原生字体匹配 100% 准确\n- 复合 FontFamily 自适应渲染：引入复合字体家族声明（优先解析 %LocalAppData%\\Microsoft\\Windows\\Fonts 用户目录，兜底系统 C:\\Windows\\Fonts 目录），字体列表项 100% 呈现各字体自身的书法、艺术、毛笔、黑体等真实字形效果，杜绝退化为西文字体",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "2C9465F408735DC7CB4F4AF83CE813CD8820138B1FFE0AFCF97BC016F064B83F"
+  "sha256": "1F76455D00718158636B9C0A8FE1687BFB3DAAFD7450BE2C7312A8ADEF728E53"
 }
