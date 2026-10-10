@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.12",
+  "version": "2.0.7.13",
   "type": "hotfix",
-  "title": "v2.0.7.12 矢量巡边自然圆弧圆润度全面恢复与设置面板滚动条彻底消除",
-  "changelog": "- 矢量巡边自然圆弧与自由插画圆润度全面恢复：重构角点检测算法，将局部步长恢复为稳定的微观局部尺度（6.0px），彻底消除大外扩时跨越小圆球灯与弯曲藤蔓导致的伪角点误判；建立严格的正交多边形拓扑判据，直角外延锐化仅对正交矩形生效，所有小圆球、藤蔓与自然曲线 100% 保持极致圆滑的三次贝塞尔曲线平顺输出，杜绝生硬折角与切线\n- CorelDRAW 曲线平滑原生保障：在 CorelHelper 中对平滑贝塞尔段统一采用 AppendCurveSegment2 原生平滑节点绘制，杜绝段间强制插入 Cusp 尖锐折角\n- 巡边设置面板滚动条彻底消除：紧凑化重构 ContourSettingsWindow 界面排版，将 VerticalScrollBarVisibility 彻底设为 Disabled，在各类高分屏与缩放比例下坚决不出现任何滚动条",
+  "title": "v2.0.7.13 字体管理全量8400+字体毫秒级秒开渲染优化与纯净DirectWrite内存字形加速",
+  "changelog": "- 字体管理秒开渲染全面提速：彻底移除外部文件夹 URI 扫描瓶颈，改用纯净 Windows DirectWrite 内存共享字体族名构造，杜绝渲染线程对磁盘字体文件夹的海量 IO 检索，列表滚动与渲染丝滑如飞\n- 高性能批量数据绑定：引入 RangeObservableCollection 批量装载机制，单次 Reset 注入 8400+ 款字体，彻底根除 UI 线程数千次频繁事件通知调度与 Grouping 视图重建卡顿\n- 分组虚拟化与像素滚动深度调优：在 ListBox GroupStyle 中显式启用 VirtualizingStackPanel 模板与 Pixel 像素级滚动，实现海量字体按需即时渲染，保障全量 8400+ 款字体一款不少且瞬间秒开",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "80DC2C510579E55DD47219936AA9E96CAD6E74B36BC7FCAD0FF4BC4C51846313"
+  "sha256": "B3BB2A828E3C6117FF4F0DBB95A5427031892BC640D078F8953110D0F4B9DF8C"
 }
