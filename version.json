@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.13",
+  "version": "2.0.7.14",
   "type": "hotfix",
-  "title": "v2.0.7.13 字体管理全量8400+字体毫秒级秒开渲染优化与纯净DirectWrite内存字形加速",
-  "changelog": "- 字体管理秒开渲染全面提速：彻底移除外部文件夹 URI 扫描瓶颈，改用纯净 Windows DirectWrite 内存共享字体族名构造，杜绝渲染线程对磁盘字体文件夹的海量 IO 检索，列表滚动与渲染丝滑如飞\n- 高性能批量数据绑定：引入 RangeObservableCollection 批量装载机制，单次 Reset 注入 8400+ 款字体，彻底根除 UI 线程数千次频繁事件通知调度与 Grouping 视图重建卡顿\n- 分组虚拟化与像素滚动深度调优：在 ListBox GroupStyle 中显式启用 VirtualizingStackPanel 模板与 Pixel 像素级滚动，实现海量字体按需即时渲染，保障全量 8400+ 款字体一款不少且瞬间秒开",
+  "title": "v2.0.7.14 字体管理官方规范显示名与原生艺术书法字形精准呈现",
+  "changelog": "- 字体名称与专属字形完美结合：系统字体走 DirectWrite 共享缓存秒开，个人安装字体精准绑定文件路径 URI，既保留规范干净的官方字体显示名称，又以该字体真实的书法/艺术字形呈现名称，且毫秒级瞬间秒开无卡顿\n- 智能文件映射架构：通过 Windows GDI 与 HKCU 注册表建立字体物理文件映射，精准命中字体文件直接加载字形，彻底避免对海量文件夹的全盘扫描 IO 瓶颈\n- 极速流畅体验：配合 RangeObservableCollection 单次注入与容器虚拟化，8400+ 款海量字体切换、检索与滚动丝滑流畅",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "B3BB2A828E3C6117FF4F0DBB95A5427031892BC640D078F8953110D0F4B9DF8C"
+  "sha256": "0549288539187BA3852D9B5C6C9A790790C8666EDAB510B47C8A13A152461A7E"
 }
