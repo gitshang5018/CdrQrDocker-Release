@@ -7,7 +7,7 @@
 ## 🚀 快速下载与安装
 
 ### 1. 全量安装程序（推荐，原生组件一并更新）
-- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.18)](CorelDraw插件安装程序.exe)
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.19)](CorelDraw插件安装程序.exe)
 - **国内加速下载**：[加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
 - **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
 
@@ -17,19 +17,19 @@
 
 ---
 
-## ⚡ v2.0.7.18 更新亮点
+## ⚡ v2.0.7.19 更新亮点
 
-1. **巡边生成单窗口原位内聚执行（In-Place Execution）**：
-   - 点击“确定生成”时不再关闭当前设置窗口、不再额外弹出独立进度窗，而是直接在当前设置弹窗底部原位呈现生成状态并绘制割线；
-   - 从架构源头上彻底消灭了“关窗-开窗-再关窗”引发的 Windows DWM 焦点回退机制，彻底根除点击生成时“一闪而过其他程序界面”或“唤起后台无关窗口/文件夹”的问题。
-2. **Win32 AttachThreadInput 线程队列附加**：
-   - 强化 CorelDRAW 前台激活，平滑穿透 Windows 前台锁限制，确保生成完成后无闪烁自然交还宿主。
-3. **维持转曲保存使用原生 Windows Shell API（`SHOpenFolderAndSelectItems`）**：
-   - 仅精准置顶打开目标文件所在文件夹且高亮选中目标文件，不遮挡、不拉起多余文件夹。
+1. **彻底根除转曲保存拉起其他全部文件夹问题**：
+   - 彻底废除 `explorer.exe /select` 命令行调用与回退逻辑，改用 Windows 标准 Shell 协议直接原生打开目标保存目录；
+   - 彻底杜绝触发 Windows 11/10 资源管理器进程级窗口组聚合提升（Window Grouping），**绝不把桌面上已打开的其他无关文件夹窗口连带拉到前台**。
+2. **纯净化 CorelDRAW 激活逻辑**：
+   - 彻底移除 Win32 `AttachThreadInput` 外部前台线程队列绑定，杜绝在焦点交接时将第三方外部活动程序窗口强行捆绑拉到前台。
+3. **保持巡边生成单窗口原位内聚执行（In-Place Execution）**：
+   - 当前设置弹窗直接原位呈现“导出 -> 提取轮廓 -> 直绘割线”，不额外弹独立进度窗，根除窗口开合闪烁与 DWM 焦点悬空。
 
 ---
 
-## ⚡ v2.0.7.17 历史亮点
+## ⚡ v2.0.7.18 历史亮点
 
 1. **采用 Windows 原生 Shell API（`SHOpenFolderAndSelectItems`）精准定位打开文件**：
    - 彻底废除旧版 COM 枚举遍历与 TopMost 提权黑魔法，杜绝扰乱 Windows 资源管理器窗口组 Z 序引发的「唤起多余无关文件夹窗口」问题；

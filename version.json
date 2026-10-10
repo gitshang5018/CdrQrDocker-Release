@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.18",
+  "version": "2.0.7.19",
   "type": "hotfix",
-  "title": "v2.0.7.18 巡边原位内聚执行与彻底根除后台窗口唤起闪烁修复",
-  "changelog": "- 巡边生成单窗口原位内聚执行：点击确定生成不再通过关窗重新弹进度窗，直接在当前窗口原位呈现生成状态并绘制割线，从源头上彻底根除 DWM 焦点悬空唤起后台其他程序或文件夹的问题\n- Win32 AttachThreadInput 线程队列附加：强化 CorelDRAW 前台激活，穿透 Windows 前台锁限制，平滑交接焦点不闪烁\n- 维持转曲保存使用原生 Windows Shell API（SHOpenFolderAndSelectItems），仅精准置顶打开目标文件所在文件夹且不被遮挡",
+  "title": "v2.0.7.19 彻底根除转曲保存拉起其他文件夹与外部线程绑定闪烁修复",
+  "changelog": "- 彻底根除拉起其他无关文件夹问题：废除 explorer /select 命令行唤起机制，改用 Windows 标准 Shell 协议直接精准打开目标文件夹，彻底避免触发 Windows 资源管理器窗口组聚合提权，绝不把桌面上已打开的其他文件夹窗口拉到前台\n- 纯净化 CorelDRAW 激活逻辑：彻底移除 AttachThreadInput 外部前台线程队列绑定，杜绝在焦点交接时将第三方程序窗口一并强行捆绑拉起\n- 保持巡边生成单窗口原位内聚执行，杜绝界面开合闪烁",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "6EEB6B1D70D0219F28E3B7CC277DCFCE087A27785F93E38B5519A6385600A0F0"
+  "sha256": "CEE63A2F9D38009DBFC024AB1C9CBB764450D9D84584BE82121547A3E01FAFCF"
 }
