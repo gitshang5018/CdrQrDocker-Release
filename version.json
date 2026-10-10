@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.9",
+  "version": "2.0.7.10",
   "type": "hotfix",
-  "title": "v2.0.7.9 巡边单对象一体化融合与窗口无滚动条紧凑布局",
-  "changelog": "- 彻底根除多图层膨胀：描边（CutContour 割线）、置入容器（PowerClip 裁切）与白色底衬（WhiteBacking 填充）全部融合于单一轮廓割线对象中执行，不再产生多余图层与层级分组\n- 重构巡边设置窗口（ContourSettingsWindow）：禁用垂直滚动条，紧凑化卡片与控件垂直排版，完美适配各类屏幕分辨率与缩放比例\n- 保持全句柄会话广播解锁与 0 死结高精矢量巡边全链路稳定畅通",
+  "title": "v2.0.7.10 矢量巡边高精转角识别重构与真实物理尖角顶点保真修复",
+  "changelog": "- 攻克矢量巡边直角/锐角削角削平痛点：重构原生切向量角点检测算法（DetectMacroCorners），基于物理空间累积弧长微分（5.0px 窗口）与欧氏空间聚类抑制，根除平局丢弃与对称长边角点漏检缺陷\n- 引入自适应几何交点锐化微调（Corner Apex Miter Sharpening）：根据转向角自适应计算前后射线几何交点，精确顶回 Marching Squares 离散网格截角，割线顶点严格到达真实物理转角顶点，彻底消除红色外角外露与倒角削平\n- 直线段快速拟合通道：对平直边缘直接生成一次退化三次贝塞尔直线段，100% 笔直且杜绝波浪抖动\n- 保持单对象一体化融合、Stone-DeRose 弦投影单调与全域 0 自交死结（0 Knots）保障",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "A8CEB33CA70E1374C342E49F072408B6217CADE6FC78CE585E1B51B8A542B237"
+  "sha256": "3A244D69EAD81BEC8C3AD27A6BF3D536F51C846AF4FC75EB2ADFDF9DCE7C61EB"
 }
