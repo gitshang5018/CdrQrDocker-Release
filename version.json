@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.15",
+  "version": "2.0.7.16",
   "type": "hotfix",
-  "title": "v2.0.7.15 字体管理完整还原至v2.0.7.8纯净秒开稳定架构并保留巡边高精成果",
-  "changelog": "- 字体管理完整回退还原至 v2.0.7.8 原生纯净架构：彻底还原 GDI+ InstalledFontCollection 极速枚举与安全 Glyph 预校验逻辑，杜绝任何外部卡顿或假死，恢复最初的极致流畅与稳定\n- 保留巡边高精转角拟合与自然圆弧平滑度成果：完整保留单对象一体化无图层膨胀、纯正交矩形直角 Miter 精准到达、自由曲线自然圆弧极致圆滑无折角，以及设置面板无滚动条优化成果",
+  "title": "v2.0.7.16 消除免抠巡边生成界面闪烁与转曲保存打开文件夹被挡修复",
+  "changelog": "- 彻底根除点击生成免抠图矢量巡边瞬间「一闪而过其他程序界面」的闪烁问题：移除进度提示窗的禁用激活限制，确保参数设置窗口与进度提示窗之间平滑无缝交接前台焦点，杜绝 Windows DWM 焦点回退\n- 彻底解决转曲保存完成后打开路径时资源管理器文件夹被 CorelDraw 窗口遮挡的问题：移除进度提示窗在 OnClosed 中延迟粗暴夺焦的副作用逻辑，将打开文件夹移至进度提示完全退出后执行，并引入强置顶机制确保文件夹稳定处于前台展示",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "D477884E595D7DB7C4939BC8008296ABB0126745371A4E5FDB2B45832B316964"
+  "sha256": "B116DFF9F07274C3D2BD0856C5385D1BCEF000E2E660A514FCDBE486D2D15CD9"
 }
