@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.14",
+  "version": "2.0.7.15",
   "type": "hotfix",
-  "title": "v2.0.7.14 字体管理官方规范显示名与原生艺术书法字形精准呈现",
-  "changelog": "- 字体名称与专属字形完美结合：系统字体走 DirectWrite 共享缓存秒开，个人安装字体精准绑定文件路径 URI，既保留规范干净的官方字体显示名称，又以该字体真实的书法/艺术字形呈现名称，且毫秒级瞬间秒开无卡顿\n- 智能文件映射架构：通过 Windows GDI 与 HKCU 注册表建立字体物理文件映射，精准命中字体文件直接加载字形，彻底避免对海量文件夹的全盘扫描 IO 瓶颈\n- 极速流畅体验：配合 RangeObservableCollection 单次注入与容器虚拟化，8400+ 款海量字体切换、检索与滚动丝滑流畅",
+  "title": "v2.0.7.15 字体管理完整还原至v2.0.7.8纯净秒开稳定架构并保留巡边高精成果",
+  "changelog": "- 字体管理完整回退还原至 v2.0.7.8 原生纯净架构：彻底还原 GDI+ InstalledFontCollection 极速枚举与安全 Glyph 预校验逻辑，杜绝任何外部卡顿或假死，恢复最初的极致流畅与稳定\n- 保留巡边高精转角拟合与自然圆弧平滑度成果：完整保留单对象一体化无图层膨胀、纯正交矩形直角 Miter 精准到达、自由曲线自然圆弧极致圆滑无折角，以及设置面板无滚动条优化成果",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "0549288539187BA3852D9B5C6C9A790790C8666EDAB510B47C8A13A152461A7E"
+  "sha256": "D477884E595D7DB7C4939BC8008296ABB0126745371A4E5FDB2B45832B316964"
 }
