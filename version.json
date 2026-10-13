@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.34",
+  "version": "2.0.7.35",
   "type": "hotfix",
-  "title": "v2.0.7.34 修复截图核对白底未跟随边框设置：恢复透明通道导出，空白区域精准透出自定义边框色",
-  "changelog": "- 修复截图核对输出白底未跟随系统设置边框颜色的缺陷：根因是选区导出参数 Transparent 被置为 false，CorelDRAW 会将选区内所有空白区域强制渲染为纯白，且 StructExportOptions 的 Matted/MatteColor 在该模式下并不生效（即 v2.0.7.32 修复失效的原因）\n- 恢复 Transparent=true 透明通道导出，空白区域改由 GDI+ 合成阶段精准透出配置的边框色；完整保留 Optimization/EventsEnabled 锁与 ICC 关闭等既有性能优化\n- 新增导出位图 Alpha 通道防御性诊断与选区光栅化耗时日志，便于后续问题追溯",
+  "title": "v2.0.7.35 字体管理仅保留在线识别：简化界面交互，移除AI识别依赖",
+  "changelog": "- 字体管理面板取消 AI 截图识别功能：移除对外部大模型 Vision API 的强依赖，精简界面交互与冗余回调\n- 全面聚焦专业在线识别：单键直达截图并自动复制到剪贴板，支持求字体网等专业平台快速识别与检索",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "03CEC00E114330BA742FF911262905C884C0E3451BD3D20D484D159D28F9D86A"
+  "sha256": "48873A62D53F846A5C24DEB436EF03C1277516794A8E1BC866675CA5E0A3F0F1"
 }
