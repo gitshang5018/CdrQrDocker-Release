@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.31",
+  "version": "2.0.7.32",
   "type": "hotfix",
-  "title": "v2.0.7.31 巡边多物体外扩重叠自动焊接融合，消除内部相交死结",
-  "changelog": "- 巡边重叠自动焊接融合：引入 Signed Distance Field (SDF) 布尔并集 CSG 算法，当相邻物体外扩区域重叠相交时，自动点对点焊接融合成单条连续平滑外轮廓，彻底消除交叉相交与打结死环\n- 互不重叠独立隔离：非接触图案保持独立连通域追踪，不产生任何误粘连与长宽比畸变",
+  "title": "v2.0.7.32 悬浮工具条核对截图底色直出跟随边框色，关闭透明通道保持极速光栅化",
+  "changelog": "- 截图底色直出跟随边框颜色：导出时使用 CorelDRAW 原生 Matted 哑光底色预混合引擎，空白背景直接渲染为配置的边框颜色（如 #D4D4D4），图元间隙与外部留白浑然一体\n- 彻底关闭透明通道：无需消耗 32 位 Alpha 通道透明度计算开销，海量复杂矢量对象光栅化依然飞速瞬出",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "EA0EE1E409864E940EC03E671ADEED9CF81C3CD1C0C084505D03830A7543B30F"
+  "sha256": "3D0AF52400F5624DC1D08784F7AA755888B3C263C252AD2FBCE8C73E54531061"
 }
