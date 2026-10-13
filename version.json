@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.30",
+  "version": "2.0.7.31",
   "type": "hotfix",
-  "title": "v2.0.7.30 巡边置入容器禁止自动居中错位，新增巡边窗口位置记忆",
-  "changelog": "- 巡边置入容器精准对齐：修复勾选「自动置入容器」时被 CorelDRAW 强制自动居中导致图案错位的问题，改为原地裁切置入（AutoCenter=false），绝对位置严丝合缝\n- 巡边设置窗口位置记忆：新增智能位置记忆与虚拟屏幕防丢边界校验，关闭或生成时自动保存窗口坐标，下次打开恢复到上次习惯停留位置",
+  "title": "v2.0.7.31 巡边多物体外扩重叠自动焊接融合，消除内部相交死结",
+  "changelog": "- 巡边重叠自动焊接融合：引入 Signed Distance Field (SDF) 布尔并集 CSG 算法，当相邻物体外扩区域重叠相交时，自动点对点焊接融合成单条连续平滑外轮廓，彻底消除交叉相交与打结死环\n- 互不重叠独立隔离：非接触图案保持独立连通域追踪，不产生任何误粘连与长宽比畸变",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "4758F393BF8AC82D7F981077CC08921A78B46C9638A0B4373D96589441146675"
+  "sha256": "EA0EE1E409864E940EC03E671ADEED9CF81C3CD1C0C084505D03830A7543B30F"
 }
