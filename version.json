@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.25",
+  "version": "2.0.7.26",
   "type": "hotfix",
-  "title": "v2.0.7.25 恢复大画幅A4文档与合同真实边角识别，新增自适应色差与极值投影定位算法",
-  "changelog": "- 恢复并重构桌面 A4 合同及大画幅文档的真实边角自动识别：彻底解决解耦 OpenCV 后 AI 模型（doc_aligner 专注卡证、对整页大文档响应低于底噪）未检出时退化为全画布边框的问题\n- 新增自适应桌面色差与凸多边形极值投影定位算法（DetectDocumentCornersFallback）：纯 GDI+ 内存指针实现，0 外部视觉库依赖，< 3ms 极速扫描定位桌面真实 A4 文档 4 个物理边角\n- 智能双轨互补：卡证票据优先采纳高置信度 AI 模型，大画幅/合同文档无缝平滑接入极值投影几何定位，兼顾小卡片与整页大文档\n- 精度基准回归测试 100% 保持：合成真值基准 6/6 用例端到端全部通过，总体角点 RMS 稳定保持 19.85px",
+  "title": "v2.0.7.26 增加证卡自动识别与物理尺寸自适应注入，透视预设扩充与中心对齐",
+  "changelog": "- 新增证卡自动识别与真实物理尺寸自适应注入：拉直矫正后，若命中标准证卡规格（或在透视窗口选择预设），自动将导入到 CorelDraw 中的对象尺寸设置为真实标准毫米尺寸，免去手动查阅调整尺寸的繁琐操作\n- 全面支持标准证卡规格：二代身份证/银行卡/社保卡 (85.6×54mm)、机动车驾驶证/行驶证 (88×60mm)、护照 (125×88mm)、户口本内页 (143×105mm)，支持横版与竖版自适应调正\n- 画布智能居中对齐：以原选图中心坐标为基准原地居中替换并删除原图，避免尺寸变化导致位置偏移\n- 透视矫正窗口增强：新增「驾驶证」与「护照」一键预设按钮，并在状态栏实时显示识别到的证卡规格与物理尺寸数值",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "7F1D3C512D66766AAF62591053B7390DDFD4F644A2216A973A69CAA55F2D1E32"
+  "sha256": "BF072D3A533BDA2199AB918FFAF9DE37C84F7227DB2E6B946F9B529BC513B398"
 }
