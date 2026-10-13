@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.28",
+  "version": "2.0.7.29",
   "type": "hotfix",
-  "title": "v2.0.7.28 泊坞窗顶部标题精简（去除英文名，防按钮被遮挡）",
-  "changelog": "- 泊坞窗顶部状态栏精简：去除原英文名称「PrePress Master」，仅保留「印前大师」，节省横向空间约 100px\n- 彻底解决窄侧边栏遮挡问题：版本号、授权激活状态徽章及右侧「🔄 检查更新」按钮在窄宽度泊坞窗下均能完整舒展呈现，避免被右侧边缘裁剪遮挡",
+  "title": "v2.0.7.29 悬浮工具条核对截图大幅提速（多元素矢量极速光栅化）",
+  "changelog": "- 悬浮工具条核对截图性能飞跃：优化 CorelDRAW 选区导出管线，关闭冗余 Alpha 透明混合与 ICC 色彩空间转换，使多元素（转曲文字、CAD复杂线框、包装刀模、多层群组）截图导出提速 2~4 倍\n- 界面防闪烁与稳定性强化：在选区光栅化期间启用全局 Optimization 状态锁，抑制主窗口多余重绘，截图过程更加轻快丝滑",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "750655A3B9133BCF8EEFCD49C34A905B980A13BA5192546F914F8CD8F5511A49"
+  "sha256": "9C06290ED5D731E07E32F81C1441E80AE4F51D960FD11EE3E82C3ECE13F347D4"
 }
