@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.27",
+  "version": "2.0.7.28",
   "type": "hotfix",
-  "title": "v2.0.7.27 侧边栏工具面板精简（移除冗余置顶/置底，悬浮工具条常驻支持）",
-  "changelog": "- 侧边栏工具面板精简优化：移除原「层级工具」（置顶/置底）按钮区域，消除与悬浮工具条（悬浮工具条已提供常驻置顶与置底控制）的功能重复\n- 紧凑布局：释放侧边栏垂直高度空间，使图像工具（矢量巡边、自动矫正、文档漂白等）更贴合用户视线，操作更加顺手高效",
+  "title": "v2.0.7.28 泊坞窗顶部标题精简（去除英文名，防按钮被遮挡）",
+  "changelog": "- 泊坞窗顶部状态栏精简：去除原英文名称「PrePress Master」，仅保留「印前大师」，节省横向空间约 100px\n- 彻底解决窄侧边栏遮挡问题：版本号、授权激活状态徽章及右侧「🔄 检查更新」按钮在窄宽度泊坞窗下均能完整舒展呈现，避免被右侧边缘裁剪遮挡",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "50416B40EBAFD17DE23D6B65D9F5EF25BC08266A4D0607D6E32381AD0ACFD91E"
+  "sha256": "750655A3B9133BCF8EEFCD49C34A905B980A13BA5192546F914F8CD8F5511A49"
 }
