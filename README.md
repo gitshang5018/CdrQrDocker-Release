@@ -7,7 +7,7 @@
 ## 🚀 快速下载与安装
 
 ### 1. 全量安装程序（推荐，原生组件一并更新）
-- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.33)](CorelDraw插件安装程序.exe)
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.34)](CorelDraw插件安装程序.exe)
 - **国内加速下载**：[加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
 - **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
 
@@ -17,7 +17,16 @@
 
 ---
 
-## ⚡ v2.0.7.33 更新亮点
+## ⚡ v2.0.7.34 更新亮点
+
+1. **修复截图核对白底未跟随边框设置（恢复透明通道导出与精准透色）**：
+   - **痛点根治**：修复悬浮工具条截图核对输出白底未跟随系统设置边框颜色的缺陷。根因是选区导出参数 `Transparent` 被置为 `false`，CorelDRAW 会将选区内所有空白区域强制渲染为纯白，且 `StructExportOptions` 的 `Matted/MatteColor` 在该模式下并未生效（即 v2.0.7.32 尝试的 Matted 底色直出失效）；
+   - **透明通道精准透出边框色**：恢复 `Transparent = true` 透明通道导出，空白区域交由 GDI+ 合成阶段的 `g.Clear(borderColor)` 自然透出配置的边框色，图元缝隙与外部留白浑然一体；
+   - **保留极致性能优化与防御性诊断**：完整保留 Optimization 优化锁、EventsEnabled 事件静默锁及关闭 ICC 嵌入等高吞吐性能手段；新增导出位图 Alpha 通道防御性诊断与选区光栅化耗时日志，确保稳定可溯。
+
+---
+
+## ⚡ v2.0.7.33 历史亮点
 
 1. **巡边多物体外扩重叠自动焊接彻底生效（热更版本隔离与多选组群协同）**：
    - **解决进程模块锁定劫持**：CorelDRAW 启动时若先行加载出厂目录旧版原生库，Win32 动态链接将永久绑定旧符号。本次在 `NativeContourBridge` 与 `HotReloader` 中将当前激活热更版本（`%LocalAppData%\CdrQrDocker\Versions`）置于搜寻链最高优先级，确保最新的 Signed Distance Field (SDF) 融合算法 100% 被加载生效；
