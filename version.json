@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.32",
+  "version": "2.0.7.33",
   "type": "hotfix",
-  "title": "v2.0.7.32 悬浮工具条核对截图底色直出跟随边框色，关闭透明通道保持极速光栅化",
-  "changelog": "- 截图底色直出跟随边框颜色：导出时使用 CorelDRAW 原生 Matted 哑光底色预混合引擎，空白背景直接渲染为配置的边框颜色（如 #D4D4D4），图元间隙与外部留白浑然一体\n- 彻底关闭透明通道：无需消耗 32 位 Alpha 通道透明度计算开销，海量复杂矢量对象光栅化依然飞速瞬出",
+  "title": "v2.0.7.33 巡边重叠焊接彻底生效：原生DLL版本隔离优先加载，多选图元组群统一焊接与容器置入",
+  "changelog": "- 巡边重叠融合彻底生效：解决宿主进程锁定旧版 Native DLL 导致更新未生效的根因，在 NativeContourBridge 与 HotReloader 中将激活热更版本目录提升为最高优先级，杜绝旧 DLL 劫持\n- 完善多选图元巡边体系：框选多个分散图元时自动群组统一计算真实物理尺寸与对齐原点，经 SDF 布尔并集融合后将所有图元一并置入焊接割线容器，杜绝多选错位与遗漏",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "3D0AF52400F5624DC1D08784F7AA755888B3C263C252AD2FBCE8C73E54531061"
+  "sha256": "AB231F83060C37EC52E4181768AA7FFD64541B63A885845CD5FF49B73C3BF6F0"
 }
