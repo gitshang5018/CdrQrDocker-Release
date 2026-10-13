@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.29",
+  "version": "2.0.7.30",
   "type": "hotfix",
-  "title": "v2.0.7.29 悬浮工具条核对截图大幅提速（多元素矢量极速光栅化）",
-  "changelog": "- 悬浮工具条核对截图性能飞跃：优化 CorelDRAW 选区导出管线，关闭冗余 Alpha 透明混合与 ICC 色彩空间转换，使多元素（转曲文字、CAD复杂线框、包装刀模、多层群组）截图导出提速 2~4 倍\n- 界面防闪烁与稳定性强化：在选区光栅化期间启用全局 Optimization 状态锁，抑制主窗口多余重绘，截图过程更加轻快丝滑",
+  "title": "v2.0.7.30 巡边置入容器禁止自动居中错位，新增巡边窗口位置记忆",
+  "changelog": "- 巡边置入容器精准对齐：修复勾选「自动置入容器」时被 CorelDRAW 强制自动居中导致图案错位的问题，改为原地裁切置入（AutoCenter=false），绝对位置严丝合缝\n- 巡边设置窗口位置记忆：新增智能位置记忆与虚拟屏幕防丢边界校验，关闭或生成时自动保存窗口坐标，下次打开恢复到上次习惯停留位置",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "9C06290ED5D731E07E32F81C1441E80AE4F51D960FD11EE3E82C3ECE13F347D4"
+  "sha256": "4758F393BF8AC82D7F981077CC08921A78B46C9638A0B4373D96589441146675"
 }
