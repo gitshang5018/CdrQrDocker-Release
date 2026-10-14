@@ -1,9 +1,9 @@
-{
-  "version": "2.0.7.35",
+﻿{
+  "version": "2.0.7.36",
   "type": "hotfix",
-  "title": "v2.0.7.35 字体管理仅保留在线识别：简化界面交互，移除AI识别依赖",
-  "changelog": "- 字体管理面板取消 AI 截图识别功能：移除对外部大模型 Vision API 的强依赖，精简界面交互与冗余回调\n- 全面聚焦专业在线识别：单键直达截图并自动复制到剪贴板，支持求字体网等专业平台快速识别与检索",
+  "title": "v2.0.7.36 矢量化升级为 Vector Magic 高精度引擎：一键矢量化自动导入 EPS，移除 VTracer 与内置 PowerTRACE",
+  "changelog": "- 矢量化引擎升级：接入 Vector Magic 高精度矢量化（本机已安装时可用），默认输出 EPS 并自动导入 CorelDRAW，导入后与原图物理尺寸一致\n- 移除旧的两条描摹路线：外挂 VTracer（仓库内实际缺少 vtracer.exe，会静默空转）与 CorelDRAW 内置 PowerTRACE/快速描摹\n- 未安装 Vector Magic 时给出明确提示，不影响其它功能",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "48873A62D53F846A5C24DEB436EF03C1277516794A8E1BC866675CA5E0A3F0F1"
+  "sha256": "1E0BE6B98E5E2F0E52B005E112CE0C2DEFC1600A9158FE2CA6BAD62F0146FB15"
 }

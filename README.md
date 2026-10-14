@@ -7,17 +7,28 @@
 ## 🚀 快速下载与安装
 
 ### 1. 全量安装程序（推荐，原生组件一并更新）
-- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.35)](CorelDraw插件安装程序.exe)
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.36)](CorelDraw插件安装程序.exe)
 - **国内加速下载**：[加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
 - **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
 
 ### 2. 免安装热更补丁（老用户静默或手动升级）
-- **补丁直接下载**：[CdrQrDocker.Core.zip (2.84 MB)](CdrQrDocker.Core.zip)
+- **补丁直接下载**：[CdrQrDocker.Core.zip (2.86 MB)](CdrQrDocker.Core.zip)
 - **国内加速下载**：[加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip)
 
 ---
 
-## ⚡ v2.0.7.35 更新亮点
+## ⚡ v2.0.7.36 更新亮点
+
+1. **矢量化升级为 Vector Magic 高精度引擎（一键矢量化并自动导入）**：
+   - **引擎替换**：浮动工具栏的「矢量化」按钮改由 Vector Magic 高精度引擎驱动，选中位图一键转矢量并自动导入 CorelDRAW；
+   - **尺寸自动对齐**：按原图的实际物理尺寸反算缩放参数，导入后的矢量图与原位图**等大**，喷绘/印前无需再手工缩放；
+   - **默认输出 EPS**：印前通用格式，图形以**填充彩色**输出（非描边轮廓），色数与细节可在参数中控制；
+   - **移除旧路线**：删除外挂 VTracer（仓库内实际缺少 vtracer.exe，点击后静默空转、毫无反应）与 CorelDRAW 内置 PowerTRACE / 快速描摹两条旧路径，彻底消除「点了没反应」的困惑；
+   - **合规说明**：该引擎为第三方商业组件，插件**只调用本机已安装的 Vector Magic**，不随安装包分发；未安装时给出明确提示，不影响插件其它功能。
+
+---
+
+## ⚡ v2.0.7.35 历史亮点
 
 1. **字体管理仅保留在线识别（精简架构与一键直达专业识图）**：
    - **痛点根治**：移除字体管理面板对外部大模型 Vision API 的强依赖，消除识别延迟、API Key 配置门槛及返回字体不精确的问题；
