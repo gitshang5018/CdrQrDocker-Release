@@ -1,9 +1,9 @@
-﻿{
-  "version": "2.0.7.38",
+{
+  "version": "2.0.7.39",
   "type": "hotfix",
-  "title": "v2.0.7.38 修复矢量化原生模块被旧版同名 DLL 劫持，并适配引擎的路径限制",
-  "changelog": "- 修复矢量化报「未安装 Vector Magic」的真正根因：热更会在同进程内加载多个版本的原生 DLL，而 .NET 的 DllImport 按模块名解析会绑到最先加载的旧版（无新导出），报 EntryPointNotFoundException；现改为按全路径加载并逐个候选校验导出存在，彻底免疫\n- 适配引擎的路径限制（实测）：不能写临时目录根、不能写含非 ASCII 的路径；现固定使用 ASCII 工作子目录，需要保留文件时再由插件拷贝到目标路径（支持中文目录与文件名）\n- 引擎目录读取改为宽字符，诊断信息更准确",
+  "title": "v2.0.7.39 优化矢量化默认DPI为300并增加原生阶段进度与取消机制",
+  "changelog": "- 矢量化默认导出 DPI 优化为 300，增加最大安全像素限制，解决高分辨率位图矢量化耗时过长甚至假死问题\n- 原生引擎接入 6 阶段细粒度进度回调（图像分析、调色板、区域分割、轮廓平滑、贝塞尔拟合、文件写出），进度条实时可感知\n- 原生引擎接入用户主动取消机制，可在任意计算阶段中断退出，杜绝后台卡死\n- 保持物理尺寸等大映射，矢量化图元与原位图物理尺寸 1:1 毫米级吻合",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "AB93E6A004756E7918FD3E6E406B27645DE0528050BAADDFFF96B6496A7C58E0"
+  "sha256": "2C05A9E210D8A60F92055B77420EC1DF0245B868A0C379ABD56BB9162C6CDE2D"
 }
