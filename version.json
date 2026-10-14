@@ -1,9 +1,9 @@
 ﻿{
-  "version": "2.0.7.37",
+  "version": "2.0.7.38",
   "type": "hotfix",
-  "title": "v2.0.7.37 修复矢量化引擎在 CorelDRAW 进程内加载失败：多策略加载与完整诊断",
-  "changelog": "- 修复矢量化的引擎加载：部分宿主进程环境（如 CorelDRAW 已加载 500+ 模块）下 engine_project.dll 首次加载会失败，现改为多策略加载（依赖预载 / 指定搜索目录 / 默认搜索）并逐策略记录失败原因\n- 引擎不可用时不再笼统提示「未安装」，而是在弹窗与日志中给出具体原因与诊断，便于定位\n- 上一版功能不变：一键矢量化自动导入 EPS、尺寸与原图等大",
+  "title": "v2.0.7.38 修复矢量化原生模块被旧版同名 DLL 劫持，并适配引擎的路径限制",
+  "changelog": "- 修复矢量化报「未安装 Vector Magic」的真正根因：热更会在同进程内加载多个版本的原生 DLL，而 .NET 的 DllImport 按模块名解析会绑到最先加载的旧版（无新导出），报 EntryPointNotFoundException；现改为按全路径加载并逐个候选校验导出存在，彻底免疫\n- 适配引擎的路径限制（实测）：不能写临时目录根、不能写含非 ASCII 的路径；现固定使用 ASCII 工作子目录，需要保留文件时再由插件拷贝到目标路径（支持中文目录与文件名）\n- 引擎目录读取改为宽字符，诊断信息更准确",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "937783033AEF6D420E766D04DFA8ABE4B1F86059591B9C326AC85D7745021CAE"
+  "sha256": "AB93E6A004756E7918FD3E6E406B27645DE0528050BAADDFFF96B6496A7C58E0"
 }
