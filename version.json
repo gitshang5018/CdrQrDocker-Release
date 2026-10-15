@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.39",
+  "version": "2.0.7.40",
   "type": "hotfix",
-  "title": "v2.0.7.39 优化矢量化默认DPI为300并增加原生阶段进度与取消机制",
-  "changelog": "- 矢量化默认导出 DPI 优化为 300，增加最大安全像素限制，解决高分辨率位图矢量化耗时过长甚至假死问题\n- 原生引擎接入 6 阶段细粒度进度回调（图像分析、调色板、区域分割、轮廓平滑、贝塞尔拟合、文件写出），进度条实时可感知\n- 原生引擎接入用户主动取消机制，可在任意计算阶段中断退出，杜绝后台卡死\n- 保持物理尺寸等大映射，矢量化图元与原位图物理尺寸 1:1 毫米级吻合",
+  "title": "v2.0.7.40 高清放大成品质量优化（不动引擎，无新增依赖）",
+  "changelog": "- 修复倍率与模型不匹配导致的细节损失：exe 的 -s 小于模型原生倍率时，引擎内部会用双线性降采样；现改为按模型原生倍率出图，缩放交由插件侧 Lanczos3 完成\n- 修复「要 2x 时把写实模型(remacri/ultrasharp)换成 anime 模型」的问题：不再跨画风换模型，仅 animevideov3 系列在同家族内换倍率版本\n- 新增输出抖动（Bayer 8x8 有序抖动，可用 dither:false 关闭）：显著减少 8-bit 平滑渐变的色带，喷绘大色块场景尤为明显\n- 增强日志：记录放大方案（模型/exe倍率/插件缩放）、引擎耗时与后处理结果，便于评估与调优\n- 后处理失败安全：任何异常只记录日志，不影响原有放大与导入流程",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "2C05A9E210D8A60F92055B77420EC1DF0245B868A0C379ABD56BB9162C6CDE2D"
+  "sha256": "FEA36C71CDD45AA60B10F877F2C11FA4A44FCE2D06A32D380063FB252EF08220"
 }
