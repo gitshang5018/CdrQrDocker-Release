@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.47",
+  "version": "2.0.7.48",
   "type": "hotfix",
-  "title": "v2.0.7.47 彻底消除全窗口同步重绘与特效光栅化解耦优化",
-  "changelog": "- 彻底移除 app.Optimization 锁：彻底消灭 CorelDRAW 恢复 Optimization=false 时触发的全窗口与文档视口完整重绘（Full Window Redraw）巨量惩罚，避免无谓消耗 500~1000ms\n- 特效光栅化解耦：当目标像素尺寸已明确时，将特效基准设为 96 DPI，彻底绕开 300 DPI 下高达 9 倍像素算力的高斯模糊（阴影/羽化/透明度透镜）卷积灾难；矢量图元依然严格以点对点高清渲染，并在 GDI+ 阶段保留物理 DPI 元数据\n- 细粒度高精度性能诊断：增加导出构建与渲染写盘独立耗时监控，透明展示每一毫秒开销",
+  "title": "v2.0.7.48 快门闪烁同步化：截图完成与缩略图卡片一齐呈现",
+  "changelog": "- 动画时序改回同步呈现：移除点击前的提前闪烁，截图捕获完成并写入剪贴板后，全屏快门闪白与右下角缩略图卡片同步一齐出现，手感更自然爽快\n- 彻底移除 app.Optimization 锁与特效光栅化解耦，杜绝后台无谓重绘与高斯卷积开销",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "2324BB70591A189F2375F56DF614C08E5627B41186DD80A2A5D6CB73D433142D"
+  "sha256": "DEE7BA1F9A53EF50EA66DB5AC1FE1AE08992E7E02FE25DBDC30B826F3362CBB4"
 }
