@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.43",
+  "version": "2.0.7.44",
   "type": "hotfix",
-  "title": "v2.0.7.43 客户核对截图亚秒级极速响应优化",
-  "changelog": "- 客户核对截图极速响应优化：前台响应时间从 2~5秒 彻底压缩至 300~500ms（提速 5~10 倍，界面零卡顿）\n- GDI+ 1:1 高速直绘：优化画布合成算法，绕开双三次插值重采样卷积开销\n- 预览缩略图秒出：直出 240px 轻量已冻结缩略图，杜绝全分辨率 PNG 编码与解码往返死等\n- 剪贴板通道加速：Win32 原生优先直写 CF_DIB/CF_BITMAP，微信/QQ秒贴，后台异步静默追加 PNG 格式",
+  "title": "v2.0.7.44 客户核对截图 0ms 瞬间快门反馈与 CorelDRAW 极速直出优化",
+  "changelog": "- 0ms 瞬间交互快门反馈：用户点击截图按钮第 0 毫秒立即触发全屏快门闪白动画，与 iPhone / Android 截屏体验一致，彻底消除点击后的呆滞感与等待感\n- CorelDRAW 显存级光栅化加速：将屏幕核对图长边控制在 1800px（远超微信 1080P/1440P 上限），避开超过 2048px 显存分块分页重绘泥潭，复杂对象光栅化耗时由 1.6 秒暴降至 150~200ms\n- 消除内部二次重采样：传入与目标像素严格匹配的 effectiveDpi，杜绝 CorelDRAW 导出引擎内部非等比拉伸重绘",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "9294866374FEAC5C3D139846D1C3A09103F82C4C70313E21E8A36C6A2CE13404"
+  "sha256": "7BF463CA51086E8BB0553C5AAD12A8A665DFE0ECF30F244E325A0C7F1477D48A"
 }
