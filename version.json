@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.46",
+  "version": "2.0.7.47",
   "type": "hotfix",
-  "title": "v2.0.7.46 客户核对截图黄金尺寸阶梯与亚秒级极速直出优化",
-  "changelog": "- 客户核对截图黄金尺寸阶梯：彻底打破 CorelDRAW 矢量光栅化 1秒+ 性能瓶颈，建立匹配屏幕显示的黄金阶梯（普通960px/250ms，推荐高清1150px/380ms，超清1280px/480ms），像素减少 50%~70%，视网膜级文字细节毫发毕现\n- 消除多余 COM 往返：复用物理尺寸换算值，杜绝重复调用 app.ConvertUnits\n- 配置优化：系统截图默认 DPI 调整为 200（高清推荐），兼顾视网膜超清与亚秒级极速响应",
+  "title": "v2.0.7.47 彻底消除全窗口同步重绘与特效光栅化解耦优化",
+  "changelog": "- 彻底移除 app.Optimization 锁：彻底消灭 CorelDRAW 恢复 Optimization=false 时触发的全窗口与文档视口完整重绘（Full Window Redraw）巨量惩罚，避免无谓消耗 500~1000ms\n- 特效光栅化解耦：当目标像素尺寸已明确时，将特效基准设为 96 DPI，彻底绕开 300 DPI 下高达 9 倍像素算力的高斯模糊（阴影/羽化/透明度透镜）卷积灾难；矢量图元依然严格以点对点高清渲染，并在 GDI+ 阶段保留物理 DPI 元数据\n- 细粒度高精度性能诊断：增加导出构建与渲染写盘独立耗时监控，透明展示每一毫秒开销",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "4934FA833F80C383E01D767A3B1370EFCAE3A4BAE7D080F00E4F8F84C72C7D55"
+  "sha256": "2324BB70591A189F2375F56DF614C08E5627B41186DD80A2A5D6CB73D433142D"
 }
