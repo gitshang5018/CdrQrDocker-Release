@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.44",
+  "version": "2.0.7.45",
   "type": "hotfix",
-  "title": "v2.0.7.44 客户核对截图 0ms 瞬间快门反馈与 CorelDRAW 极速直出优化",
-  "changelog": "- 0ms 瞬间交互快门反馈：用户点击截图按钮第 0 毫秒立即触发全屏快门闪白动画，与 iPhone / Android 截屏体验一致，彻底消除点击后的呆滞感与等待感\n- CorelDRAW 显存级光栅化加速：将屏幕核对图长边控制在 1800px（远超微信 1080P/1440P 上限），避开超过 2048px 显存分块分页重绘泥潭，复杂对象光栅化耗时由 1.6 秒暴降至 150~200ms\n- 消除内部二次重采样：传入与目标像素严格匹配的 effectiveDpi，杜绝 CorelDRAW 导出引擎内部非等比拉伸重绘",
+  "title": "v2.0.7.45 快门闪白一闪而过优化与独立 STA 线程渲染",
+  "changelog": "- 快门闪白一闪而过优化：将全屏快门闪烁移至独立后台 STA 线程运行，彻底解耦主线程任务阻塞，动画帧率提升至 120 FPS\n- 极速清脆快门曲线：总时长由 300ms 压缩至 110ms，峰值透明度优化为 0.62 通透柔光，15ms 峰值后沿贝塞尔曲线极速消散，带来如单反快门般清脆爽快的一闪而过体验，彻底消除全屏白光滞留感",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "7BF463CA51086E8BB0553C5AAD12A8A665DFE0ECF30F244E325A0C7F1477D48A"
+  "sha256": "16D097149AB89C8FE8EFBB94C9782E4D006A606CD261C1DB4D4C1FAABF65B49A"
 }
