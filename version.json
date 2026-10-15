@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.45",
+  "version": "2.0.7.46",
   "type": "hotfix",
-  "title": "v2.0.7.45 快门闪白一闪而过优化与独立 STA 线程渲染",
-  "changelog": "- 快门闪白一闪而过优化：将全屏快门闪烁移至独立后台 STA 线程运行，彻底解耦主线程任务阻塞，动画帧率提升至 120 FPS\n- 极速清脆快门曲线：总时长由 300ms 压缩至 110ms，峰值透明度优化为 0.62 通透柔光，15ms 峰值后沿贝塞尔曲线极速消散，带来如单反快门般清脆爽快的一闪而过体验，彻底消除全屏白光滞留感",
+  "title": "v2.0.7.46 客户核对截图黄金尺寸阶梯与亚秒级极速直出优化",
+  "changelog": "- 客户核对截图黄金尺寸阶梯：彻底打破 CorelDRAW 矢量光栅化 1秒+ 性能瓶颈，建立匹配屏幕显示的黄金阶梯（普通960px/250ms，推荐高清1150px/380ms，超清1280px/480ms），像素减少 50%~70%，视网膜级文字细节毫发毕现\n- 消除多余 COM 往返：复用物理尺寸换算值，杜绝重复调用 app.ConvertUnits\n- 配置优化：系统截图默认 DPI 调整为 200（高清推荐），兼顾视网膜超清与亚秒级极速响应",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "16D097149AB89C8FE8EFBB94C9782E4D006A606CD261C1DB4D4C1FAABF65B49A"
+  "sha256": "4934FA833F80C383E01D767A3B1370EFCAE3A4BAE7D080F00E4F8F84C72C7D55"
 }
