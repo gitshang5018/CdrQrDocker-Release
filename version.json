@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.41",
+  "version": "2.0.7.42",
   "type": "hotfix",
-  "title": "v2.0.7.41 修复高清放大终止任务时崩溃闪退问题",
-  "changelog": "- 修复高清放大（Upscale）执行过程中点击「终止」导致宿主 CorelDraw 崩溃闪退的严重缺陷：彻底移除进度更新事件中的未捕获异常抛出，杜绝工作线程异常引发 CLR Fail-Fast\n- 强化外部子进程生命周期管理：当用户点击终止时立即安全 Kill 外部 realesrgan-ncnn-vulkan.exe 进程，释放 GPU 显存与计算资源，避免残留孤儿进程\n- 完善异常与取消防护网：为子进程异步输出监听、显存自适应降级重试与 CorelDraw 导入全链路增加 CancellationToken 校验与 try-catch 拦截，确保取消后平稳关闭进度条并清理临时文件",
+  "title": "v2.0.7.42 矢量巡边窗口交互优化，生成后保持常驻",
+  "changelog": "- 优化矢量巡边窗口交互体验：割线生成完成后保持窗口常驻不自动关闭，方便连续批量处理或针对同一图元微调参数再生成\n- 状态与操作流转优化：完成后实时更新状态提示为「生成完成！」，操作按钮恢复可用并将取消语义转换为「关闭」，支持随时点击关闭或右上角退出",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "247F914769A7AD0E7E2803E87E9693646AB5C779EBF4886906F3058B7CC22A72"
+  "sha256": "4D66A0D15F518A198CB225C0F09A3690C35F5C627DBF4FC262F80ED70257266E"
 }
