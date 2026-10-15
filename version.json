@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.42",
+  "version": "2.0.7.43",
   "type": "hotfix",
-  "title": "v2.0.7.42 矢量巡边窗口交互优化，生成后保持常驻",
-  "changelog": "- 优化矢量巡边窗口交互体验：割线生成完成后保持窗口常驻不自动关闭，方便连续批量处理或针对同一图元微调参数再生成\n- 状态与操作流转优化：完成后实时更新状态提示为「生成完成！」，操作按钮恢复可用并将取消语义转换为「关闭」，支持随时点击关闭或右上角退出",
+  "title": "v2.0.7.43 客户核对截图亚秒级极速响应优化",
+  "changelog": "- 客户核对截图极速响应优化：前台响应时间从 2~5秒 彻底压缩至 300~500ms（提速 5~10 倍，界面零卡顿）\n- GDI+ 1:1 高速直绘：优化画布合成算法，绕开双三次插值重采样卷积开销\n- 预览缩略图秒出：直出 240px 轻量已冻结缩略图，杜绝全分辨率 PNG 编码与解码往返死等\n- 剪贴板通道加速：Win32 原生优先直写 CF_DIB/CF_BITMAP，微信/QQ秒贴，后台异步静默追加 PNG 格式",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "4D66A0D15F518A198CB225C0F09A3690C35F5C627DBF4FC262F80ED70257266E"
+  "sha256": "9294866374FEAC5C3D139846D1C3A09103F82C4C70313E21E8A36C6A2CE13404"
 }
