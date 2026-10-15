@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.48",
-  "type": "hotfix",
-  "title": "v2.0.7.48 快门闪烁同步化：截图完成与缩略图卡片一齐呈现",
-  "changelog": "- 动画时序改回同步呈现：移除点击前的提前闪烁，截图捕获完成并写入剪贴板后，全屏快门闪白与右下角缩略图卡片同步一齐出现，手感更自然爽快\n- 彻底移除 app.Optimization 锁与特效光栅化解耦，杜绝后台无谓重绘与高斯卷积开销",
+  "version": "2.0.7.49",
+  "type": "feature",
+  "title": "v2.0.7.49 顶尖社区超分模型集成与平铺单选面板升级",
+  "changelog": "- 集成四大顶尖社区超分模型：4x_NMKD-Superscale-SP (写实摄影无白边)、4x-AnimeSharp (线稿收紧与描摹前处理)、4xNomos8kSC (电商商品与真实材质质感)、4x-UniScale-Restore (微信低清糊图盲超分降噪)\n- 超分辨率面板升级为 4x2 紧凑平铺单选布局，带场景 ToolTip 提示，一键直选\n- 强化模型按需极速拉取链路与兼容别名机制，毫秒级响应",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "DEE7BA1F9A53EF50EA66DB5AC1FE1AE08992E7E02FE25DBDC30B826F3362CBB4"
+  "sha256": "29A8E24FCFCDF400EAE9C708AAC9C457909DBA0601E6DFAD0A4933863F25DE11"
 }
