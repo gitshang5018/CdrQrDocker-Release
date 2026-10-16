@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.51",
+  "version": "2.0.7.52",
   "type": "feature",
-  "title": "v2.0.7.51 异形拼版全局24档高密度旋转与触底高度代价优化",
-  "changelog": "- 异形拼版全面升级为全局24档高密度角度采样（15°细分步长）叠加几何OBB最小包围盒主轴\n- 重构放置代价函数为触底高度 (y+mH) 优先评估，彻底解决细长笔画竖立戳高版面、浪费材料问题\n- 细小零件可灵活以任意角度斜向滑入前序大字空隙，空间紧凑度与省料利用率大幅提升",
+  "title": "v2.0.7.52 异形拼版深凹槽吸附与轻量多轮微扰迭代极致省料",
+  "changelog": "- 集成大零件外凸包差集与深凹槽开放区域提取器，开放凹腔向心吸附奖励让细小零件主动钻入大字腹部\n- 引入轻量多轮微扰迭代排样器（NestingMultiPassOptimizer），毫秒级纯内存试排最高20轮\n- 支持末版定向消灭（Targeted Bin Elimination）机制，将末版零散零件提前交错插入大件空隙，力争减少版面数量（如3版压至2版直接省料33%）\n- 多角度掩码全局单次预计算跨轮次复用，兼顾极速响应与极致省料利用率",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "D6CE69426D1F93D6C34FB73BB8C2625FD04863E2B3318F82023CD8FB6D679578"
+  "sha256": "E298A83DF1B96F9B9ECF78F081DE71B075978CDE33FF7A6090871B95808B2462"
 }
