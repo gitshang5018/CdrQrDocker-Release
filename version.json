@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.50",
+  "version": "2.0.7.51",
   "type": "feature",
-  "title": "v2.0.7.50 异形拼版智能旋转最佳角度与交互精简",
-  "changelog": "- 异形拼版升级为智能旋转：基于零件几何特征（凸包 Convex Hull + 最小外接包围盒 OBB + 优势长边）自动分析提取最佳排样候选角度，紧凑贴合度大幅提升\n- 移除繁琐的“旋转步数”手动设置输入框，一键全自动自适应排料\n- 规则对称图形自动去重，计算速度提升数倍；倾斜异形零件精准摆平贴合",
+  "title": "v2.0.7.51 异形拼版全局24档高密度旋转与触底高度代价优化",
+  "changelog": "- 异形拼版全面升级为全局24档高密度角度采样（15°细分步长）叠加几何OBB最小包围盒主轴\n- 重构放置代价函数为触底高度 (y+mH) 优先评估，彻底解决细长笔画竖立戳高版面、浪费材料问题\n- 细小零件可灵活以任意角度斜向滑入前序大字空隙，空间紧凑度与省料利用率大幅提升",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "6FA595CE0F415660C71A0F1EE8BA952FBD3ECC5756F1D43104D00C39D4A7B99D"
+  "sha256": "D6CE69426D1F93D6C34FB73BB8C2625FD04863E2B3318F82023CD8FB6D679578"
 }
