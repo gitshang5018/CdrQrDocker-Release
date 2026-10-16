@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.49",
+  "version": "2.0.7.50",
   "type": "feature",
-  "title": "v2.0.7.49 顶尖社区超分模型集成与平铺单选面板升级",
-  "changelog": "- 集成四大顶尖社区超分模型：4x_NMKD-Superscale-SP (写实摄影无白边)、4x-AnimeSharp (线稿收紧与描摹前处理)、4xNomos8kSC (电商商品与真实材质质感)、4x-UniScale-Restore (微信低清糊图盲超分降噪)\n- 超分辨率面板升级为 4x2 紧凑平铺单选布局，带场景 ToolTip 提示，一键直选\n- 强化模型按需极速拉取链路与兼容别名机制，毫秒级响应",
+  "title": "v2.0.7.50 异形拼版智能旋转最佳角度与交互精简",
+  "changelog": "- 异形拼版升级为智能旋转：基于零件几何特征（凸包 Convex Hull + 最小外接包围盒 OBB + 优势长边）自动分析提取最佳排样候选角度，紧凑贴合度大幅提升\n- 移除繁琐的“旋转步数”手动设置输入框，一键全自动自适应排料\n- 规则对称图形自动去重，计算速度提升数倍；倾斜异形零件精准摆平贴合",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "29A8E24FCFCDF400EAE9C708AAC9C457909DBA0601E6DFAD0A4933863F25DE11"
+  "sha256": "6FA595CE0F415660C71A0F1EE8BA952FBD3ECC5756F1D43104D00C39D4A7B99D"
 }

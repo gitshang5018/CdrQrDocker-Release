@@ -7,17 +7,26 @@
 ## 🚀 快速下载与安装
 
 ### 1. 全量安装程序（推荐，原生组件一并更新）
-- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.48)](CorelDraw插件安装程序.exe)
+- **官方直接下载**：[CorelDraw插件安装程序.exe (v2.0.7.50)](CorelDraw插件安装程序.exe)
 - **国内加速下载**：[加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe)
 - **安装方法**：双击运行安装程序，一键检测并安装到电脑上的 CorelDraw（支持 X7 到 2026/2027 各版本）。
 
 ### 2. 免安装热更补丁（老用户静默或手动升级）
-- **补丁直接下载**：[CdrQrDocker.Core.zip (2.86 MB)](CdrQrDocker.Core.zip)
+- **补丁直接下载**：[CdrQrDocker.Core.zip (2.87 MB)](CdrQrDocker.Core.zip)
 - **国内加速下载**：[加速下载](https://nuima.cc.cd/https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip)
 
 ---
 
-## ⚡ v2.0.7.48 更新亮点
+## ⚡ v2.0.7.50 更新亮点
+
+1. **异形拼版升级为智能最佳角度旋转与免手动配置**：
+   - **几何特征自适应分析**：基于零件真实轮廓的 2D 凸包（Convex Hull）与最小外接包围盒（OBB）投影算法，自动提取零件的最小占地面积偏转角与优势贴合长边，不再依赖固定的步数盲目均分；
+   - **一键极简交互**：从面板中彻底移除繁琐的“旋转步数”手动输入框，勾选“允许旋转”与“异形拼版”即可全自动完成自适应高紧凑度排版；
+   - **速度与利用率双赢**：正交或对称零件自动去重（计算耗时大幅降低 60%~75%），倾斜异形零件精准捕获最佳对齐主轴，排样密度显著提升。
+
+---
+
+## ⚡ v2.0.7.48 历史亮点
 
 1. **快门闪烁与缩略图卡片同步一齐呈现**：
    - **时序优化**：移除点击前的提前闪烁，当选区光栅化完成并成功存入剪贴板后，全屏快门闪白与右下角缩略图自适应卡片同步一齐出现，操作反馈更加自然、紧凑与连贯；
