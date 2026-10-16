@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.52",
+  "version": "2.0.7.53",
   "type": "feature",
-  "title": "v2.0.7.52 异形拼版深凹槽吸附与轻量多轮微扰迭代极致省料",
-  "changelog": "- 集成大零件外凸包差集与深凹槽开放区域提取器，开放凹腔向心吸附奖励让细小零件主动钻入大字腹部\n- 引入轻量多轮微扰迭代排样器（NestingMultiPassOptimizer），毫秒级纯内存试排最高20轮\n- 支持末版定向消灭（Targeted Bin Elimination）机制，将末版零散零件提前交错插入大件空隙，力争减少版面数量（如3版压至2版直接省料33%）\n- 多角度掩码全局单次预计算跨轮次复用，兼顾极速响应与极致省料利用率",
+  "title": "v2.0.7.53 变量数据印刷(VDP)动态数据表格实时可视化",
+  "changelog": "- 变量数据面板新增常驻实时数据表格预览区，粘贴或导入数据后即刻直观可见\n- 自动展示自增【序号】列与带序号前缀各数据列（如 1.姓名、2.电话），几列数据即展示几列\n- 采用高规格 UI 虚拟化与双向平滑滚动，数千行海量数据秒级瞬间呈现，绝不卡顿",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "E298A83DF1B96F9B9ECF78F081DE71B075978CDE33FF7A6090871B95808B2462"
+  "sha256": "0F31F6EECCAE14A82D071E3BE0A0E8FDB126CCB1D3751F76D7789C63057D1B05"
 }
