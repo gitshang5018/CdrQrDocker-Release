@@ -1,9 +1,9 @@
 {
   "version": "2.0.7.54",
-  "type": "fix",
-  "title": "v2.0.7.54 根治转曲保存同名覆盖活动文档与优化模式死锁 (COM E_FAIL)",
-  "changelog": "- 彻底根治同名覆盖正打开的活动文档时引发的 CorelDRAW COM E_FAIL 崩溃\n- 转曲完成后立即闭合 Undo CommandGroup 并恢复优化模式与视图渲染，杜绝缩略图引擎死锁\n- 采用 Safe Save Pattern（临时副本安全落盘与原子覆写），杜绝 Windows 杀软与只读/ADS 属性锁冲突",
+  "type": "feature",
+  "title": "v2.0.7.54 VDP 表头防崩溃加固与字段绑定下拉菜单化",
+  "changelog": "- 彻底根除变量数据表格双击表头引发 CorelDraw 崩溃闪退的严重缺陷，禁用冗余排序并全链路拦截表头双击异常\n- 变量字段绑定全面重构为“下拉菜单 + 紧凑单卡片”，高度锁定在约 120px，无论导入多少列数据界面均极度紧凑清爽\n- 下拉菜单实时展示各字段绑定状态与序号，支持即时切换、一键绑定/定位/解绑与类型前后缀实时回写",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "D50FC93BC63F5E131540B1318039D4DCB3D51FCEDC4E069B7B75F039AECF2670"
+  "sha256": "B2214F18A434899399B522F23D3A447DC8BBE331E92BD16580C4A915619677D3"
 }
