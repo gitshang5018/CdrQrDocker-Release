@@ -1,9 +1,9 @@
 {
-  "version": "2.0.7.53",
-  "type": "feature",
-  "title": "v2.0.7.53 变量数据印刷(VDP)动态数据表格实时可视化",
-  "changelog": "- 变量数据面板新增常驻实时数据表格预览区，粘贴或导入数据后即刻直观可见\n- 自动展示自增【序号】列与带序号前缀各数据列（如 1.姓名、2.电话），几列数据即展示几列\n- 采用高规格 UI 虚拟化与双向平滑滚动，数千行海量数据秒级瞬间呈现，绝不卡顿",
+  "version": "2.0.7.54",
+  "type": "fix",
+  "title": "v2.0.7.54 根治转曲保存同名覆盖活动文档与优化模式死锁 (COM E_FAIL)",
+  "changelog": "- 彻底根治同名覆盖正打开的活动文档时引发的 CorelDRAW COM E_FAIL 崩溃\n- 转曲完成后立即闭合 Undo CommandGroup 并恢复优化模式与视图渲染，杜绝缩略图引擎死锁\n- 采用 Safe Save Pattern（临时副本安全落盘与原子覆写），杜绝 Windows 杀软与只读/ADS 属性锁冲突",
   "hotfix_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CdrQrDocker.Core.zip",
   "installer_url": "https://raw.githubusercontent.com/gitshang5018/CdrQrDocker-Release/main/CorelDraw插件安装程序.exe",
-  "sha256": "0F31F6EECCAE14A82D071E3BE0A0E8FDB126CCB1D3751F76D7789C63057D1B05"
+  "sha256": "D50FC93BC63F5E131540B1318039D4DCB3D51FCEDC4E069B7B75F039AECF2670"
 }
